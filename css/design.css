@@ -3,10 +3,11 @@ html, body{
   padding: 0;
   height: 100%;
   font-family: Arial;
-  background-color: #262626;
+  background-color: #000;
 }
 
 #container{
   min-height: 100%;
   position: relative;
+  color: #f2f2f2;
 }
