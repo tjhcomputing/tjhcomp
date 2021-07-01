@@ -9,5 +9,8 @@ html, body{
 #container{
   min-height: 100%;
   position: relative;
+}
+
+h4{
   color: #f2f2f2;
 }
