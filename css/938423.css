@@ -19,10 +19,11 @@ body::-webkit-scrollbar {
 	top: 0;
 	bottom: 0;
 	left: 0;
-	width: 200px;
+	/*width: 200px;*/
 	overflow-x: hidden;
 	overflow-y: auto;
 	margin-top: 80px;
+	display: block;
 }
 
 #side-nav::-webkit-scrollbar {
@@ -37,7 +38,7 @@ body::-webkit-scrollbar {
 
 .side-content a{
 	display: block;
-	padding: 10px 15px;
+	padding: 10px;
 	font-size: 12px;
 	text-decoration: none;
 	width: 200px;
@@ -62,6 +63,7 @@ body::-webkit-scrollbar {
 	top: 0;
 	padding-bottom: 0;
 	z-index: 100;
+	overflow: hidden;
 }
 
 .border{
@@ -182,6 +184,11 @@ body::-webkit-scrollbar {
 #head-mobile{
 	width: 15%;
 	display: none;
+}
+
+#head-mobile span{
+	padding-top: 16px;
+	font-size: 16px;
 }
 
 #head-logo{
