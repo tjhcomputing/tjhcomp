@@ -3,6 +3,10 @@
 		display: none;
 	}
 	
+	#header{
+		overflow: hidden;
+	}
+	
 	#article{
 		margin-right: 0;
 		margin-left: 95px;
@@ -14,16 +18,23 @@
 		z-index: 10;
 	}
 	
+	#head-logo,
+	#head-nav,
+	#head-mobile{
+		height: 50px;
+	}
+	
 	#side-nav{
 		width: 130px;
 		overflow: auto;
+		display: block;
 	}
 	
 	.side-content a,
 	.side-content-nav a{
-		padding: 5px 8px;
+		padding: 5px 3px;
 		font-size: 11px;
-		max-width: 130px;
+		display: block;
 	}
 	
 	#head-nav{
@@ -53,8 +64,7 @@
 		display: inline-block;
 		margin: 15px auto;
 		display: inline-block;
-		float: none;
-		
+		float: none;	
 	}
 	
 	.ad-box{
