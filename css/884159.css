@@ -29,7 +29,6 @@
 
   .left, .right{
 	float: none;
-	clear: both;
 	display: inline-block;
   }
 
@@ -76,6 +75,7 @@
 
   .article-section p{
 	  font-size: 14px;
+	  padding-left: 10px;
   }
 	
   .post-information h2{
