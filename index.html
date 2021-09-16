@@ -2,290 +2,190 @@
 <html lang="en-gb">
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <link rel="icon" type="image/png" href="media/assets/icons/tjhcomp_favicon.png"/>
 
-<title>TJHComp | Demo Page</title>
+<title>TJHComp | Demo Home Page</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
 <link rel="stylesheet" type="text/css" href="css/092342.css"/>
 <link rel="stylesheet" type="text/css" href="css/237494.css"/>
 <link rel="stylesheet" type="text/css" href="css/884159.css"/>
 
-<script type="text/javascript" src="js/983745.js"></script>
-
 </head>
 <body>
 
 <div id="wrapper">
-
-	<div class="border" id="header">
-		<div class="head-base">
-			<div id="head-mobile">
-				<span class="fa fa-bars"></span>
-			</div>
-			<div id="head-logo">
-				<a href="index.html">
-					<img src="media/images/logo/tjhcomp_logo.png" alt="TJH Logo">
-				</a>
-			</div>
-			<div id="head-nav">
-				<a href="#" class="current">Home</a>
-				<a href="computing.html">Computing</a>
-				<a href="programming.html">Programming</a>
-				<a href="networking.html">Networking</a>
-				<a href="security.html">Security</a>
-			</div>
-		</div>
+  <div id="header" class="border">
+    <div id="head-base">
+      <div onclick="mobileMenuFunction()" id="head-mobile">
+        <span class="fa fa-bars"></span>
+        <div id="mobileMenu" class="mobile-links">
+          <a href="#" class="current">Home</a>
+          <a href="computing.html">Computing</a>
+          <a href="programming.html">Programming</a>
+          <a href="networking.html">Networking</a>
+          <a href="security.html">Security</a>
+        </div>
+      </div>
+      
+	  <div id="logo">
+        <a href="demohome.html">
+          <img src="media/images/logo/tjhcomp_logo.png" alt="TJH Logo">
+        </a>
+        <input id="mobile-search" type="text" name="search" placeholder="Search">
+      </div>
+      
+	  <div id="main-menu">
+        <a href="#" class="current">Home</a>
+        <a href="#">Computing</a>
+        <a href="#">Programming</a>
+        <a href="#">Networking</a>
+        <a href="#">Security</a>
+        <input id="search" type="text" name="search" placeholder="Search">
+      </div>
 	</div>
+  </div>
 
-	<div id="sub-nav">
-		<a href="#">Link</a>
+  <div id="sub-menu">
+    <a href="#">Link</a>
+  </div>
 
-		<div class="extend-menu">
-			<div class="navlist">Link</div>
-			<div class="content-drop">
-				<a href="#">Link 1</a>
-				<a href="#">Link 2</a>
-				<a href="#">Link 3</a>
-			</div>
-		</div>
-	</div>
+  <div id="ad-box" style="background: none; border: none;">
+    <p>[ Ad Box Container ]</p>
+    <p>No Ads</p>
+    <p>Currently a developmental prospect...</p>
+    <p>This will only display site related content only...</p>
+  </div>
 
-	<div id="side-nav">
-		<div class="side-content">
-			<a href="#">Main Content Link</a>
-		</div>
-		<div class="side-content-nav">
-			<a href="#">Content Link</a>
-			<a href="#">Content Link</a>
-			<a href="#">Content Link</a>
-		</div>
-	</div>
+  <div id="article">
+  
+    <div class="article-body">
+      <div class="article-section">
+	  
+        <h2>Home Demo Testing</h2>
 
-	<div id="article">
-		<div class="article-body">
-			<div class="article-header">
-				<div class="directory">
-					<span class="fa fa-folder connect"></span><span class="name">Home</span><span class="fa fa-chevron-right connect"></span><span class="name">Demo</span>
-				</div>
-				<h1>Demo Test Page</h1>
-				<div class="row info">
-					<span class="fa fa-user article-icon"></span> <span class="fa fa-calendar article-icon"></span> <span class="fa fa-eye article-icon"></span> [ article details ]
-				</div>
-				<div class="row info">
-					<div>
-						<span class="fa fa-tag article-icon"></span>
-						<span class="article-taglist">
-							[ tag list ]
-						</span>
-					</div>
-				</div>
-			</div>
+        <div class="warning-message">    
+          <h4>Notice</h4>
+          <P>This is a testing page only. Demo to publicly view my page based on the design given to the page.</P>
+          <p>Functionality on this page such as javascript (limited), hyperlinks, media and other page context are disabled.</p>
+          <p>Displaying my full website on <b>October, 10th 2021</b>.</p>
+        </div>
+
+        <h3>Demo Testing</h3>
+        <p>Demo paragraph testing.</p>
+	  
+        <div class="post-container">
+          <a href="demoarticle.html">
+            <div class="post-information">
+              <h2>Demo Article</h2>
+              <span>[ date ]</span>
+              <p>This is a test section for accessing the demo article...</p>
+            </div>
+            <div class="post-image">
+              <div class="fake-img"></div>
+            </div>
+		  </a>
+        </div>
+
+        <div class="ad-box">
+          <p>[ Ad Box Container ]</p>
+          <p>No Ads</p>
+          <p>Currently a developmental prospect...</p>
+          <p>This will only display site related content only...</p>
+        </div>
+      </div>
+	  
+      <div id="scroll-top" onclick="topFunction()"><span>Scroll</span><br><b>TOP</b></div>
+	  
+      <div class="border" id="footer">	
+        <div id="footer-base">
+          <div class="row">
+            <p>Footer information...</p>
+          </div>
+
+          <div class="row footer-link-container">
+            <div class="col no-border">
+              <h5>Site</h5>
+              <a href="#">Computing</a>
+              <a href="#">Programming</a>
+              <a href="#">Networking</a>
+              <a href="#">Security</a>
+            </div>
+            
+            <div class="col">
+              <h5>Information</h5>
+              <a href="#">Link</a>
+              <a href="#">Link</a>
+              <a href="#">Link</a>
+            </div>
+
+            <div class="col socials">
+              <h5>Social Media</h5>
+              <a href="https://www.facebook.com/tjh.comp" target="_blank" class="fa fa-facebook-square"></a>
+              <a href="https://www.instagram.com/tjhcomputing/" target="_blank" class="fa fa-instagram"></a>
+              <a href="https://twitter.com/TJHComputing" target="_blank" class="fa fa-twitter-square"></a>
+            </div>
+          </div>
+
+          <div class="row" style="color: #73777f;">
+            <p><b>TJHComp 2021.</b></p>
+          </div>
 		
-			<div class="article-share">
-				<span> [ article share buttons ] </span>
-			</div>
-		
-			<div class="article-section">
-			
-				<div class="warning-message">
-					<h4>Notice</h4>
-					<P>This is a testing page only. Demo to publicly view my page based on the design given to the page.</P>
-					<p>Functionality on this page such as javascript (limited), hyperlinks, media and other page context are disabled.</p>
-					<p>Displaying my full website on <b>October, 10th 2021</b>.</p>
-				</div>
-			
-				<h2 id="main-section">Welcome to my Demo Page</h2>
-				<h3 id="center-aligned">Centered Aligned Object Testing</h3>
-				<p>Testing section...</p>
-				<div class="caption-border center">
-					<div class="caption-content">
-						<div class="fake-image image-square"></div>
-					</div>
-					<div class="caption-text"><span>Centered Alignment Testing.</span></div>
-				</div>
-				<p>Testing section...</p>
-				
-				<div class="ad-box">
-					<span>Side Ad Box blends into the article page on mobile view for mobile display only.</span>
-				</div>
-				
-				<h3 id="left-aligned">Left Aligned Object Testing</h3>
-				<p>Testing section...</p>
-				<div class="caption-border left">
-					<div class="caption-content">
-						<div class="fake-image image-landscape"></div>
-					</div>
-					<div class="caption-text"><span>Left Alignment Testing.</span></div>
-				</div>
-				<p>Testing section...</p>
-				<h3 id="right-aligned">Right Aligned Object Testing</h3>
-				<p>Testing section...</p>
-				<div class="caption-border right">
-					<div class="caption-content">
-						<div class="fake-image image-potrait"></div>
-					</div>
-					<div class="caption-text"><span>Right Alignment Testing.</span></div>
-				</div>
-				
-				<h3>Table Design Testing</h3>
-				<p>Testing section...</p>
-			
-				<div class="caption-border center">
-					<div class="caption-title" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom: none;">
-						<h5>Table Testing</h5>
-					</div>
-					<div class="caption-content" style="border-top-left-radius: 0; border-top-right-radius: 0; border-top: none;">
-						<table>
-							<tr>
-								<th>Head</th>
-								<th>Head</th>
-								<th>Head</th>
-								<th>Head</th>
-								<th>Head</th>
-								<th>Head</th>
-								<th>Head</th>
-							</tr>
-							<tr>
-								<td>Data</td>
-								<td>Data</td>
-								<td>Data</td>
-								<td>Data</td>
-								<td>Data</td>
-								<td>Data</td>
-								<td>Data</td>
-							</tr>
-							<tr>
-								<td>Data</td>
-								<td>Data</td>
-								<td>Data</td>
-								<td>Data</td>
-								<td>Data</td>
-								<td>Data</td>
-								<td>Data</td>
-							</tr>
-							<tr>
-								<td>Data</td>
-								<td>Data</td>
-								<td>Data</td>
-								<td>Data</td>
-								<td>Data</td>
-								<td>Data</td>
-								<td>Data</td>
-							</tr>
-						</table>
-					</div>
-				</div>
-			
-				<p>Testing section...</p>
-				<h3>Code Section Testing</h3>
-				<p>Testing section...</p>
-
-				<div class="caption-border center">
-					<div class="caption-title" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom: none;">
-						<h5>Code Testing</h5>
-					</div>
-					<div class="caption-content" style="border-top-left-radius: 0; border-top-right-radius: 0; border-top: none;">
-						<div class="code-box" id="code-box">
-							<code>
-								<br>
-								<span>&lt;body&gt;</span><br>
-								<span>&lt;h5&gt;Code Testing&lt;/h5&gt;</span><br>
-								<span>&lt;p&gt;This is a code box for testing the code display&lt;/p&gt;</span><br>
-								<span>&lt;/body&gt;</span>
-								<br>
-							</code>
-						</div>
-					</div>
-				</div>
-
-				<p>Testing section...</p>
-				<p>Testing this <code>code</code> of text in this section...</p>
-				
-				<h3>List Testing</h3>
-				<p>Testing section...</p>
-				
-				<div class="caption-border center">
-					<div class="caption-content">
-						<ul>
-							<li><span>This is item number 1</span></li>
-							<li><span>List Item</span></li>
-							<li><span>List Item</span></li>
-							<li><span>List Item</span></li>
-						</ul>
-					</div>
-					<div class="caption-text"><span>Unordered listing.</span></div>
-				</div>
-				
-				<div class="caption-border center">
-					<div class="caption-content">
-						<ol>
-							<li><span>This is item number 1</span></li>
-							<li><span>List Item</span></li>
-							<li><span>List Item</span></li>
-							<li><span>List Item</span></li>
-						</ol>
-					</div>
-					<div class="caption-text"><span>Ordered listing.</span></div>
-				</div>
-				
-				<p>Testing section...</p>
-				<p>Testing last paragraph of this section...</p>
-			</div>
-		
-			<div id="scroll-top" onclick="topFunction()"><span>Scroll</span><br><b>TOP</b></div>
-		
-		
-			<div class="border" id="footer">
-				<div class="footer-base">
-					<div class="row">
-						<p>Footer information...</p>
-					</div>
-					
-					<div class="row footer-link-container">
-						<div class="col no-border">
-							<h5>Site</h5>
-							<a href="#">Computing</a>
-							<a href="#">Programming</a>
-							<a href="#">Networking</a>
-							<a href="#">Security</a>
-						</div>
-						<div class="col">
-							<h5>Information</h5>
-							<a href="#">Link</a>
-							<a href="#">Link</a>
-							<a href="#">Link</a>
-						</div>
-						<div class="col socials">
-							<h5>Social Media</h5>
-							<a href="#" class="fa fa-facebook-square"></a>
-							<a href="#" class="fa fa-instagram"></a>
-							<a href="#" class="fa fa-twitter-square"></a>
-						</div>
-					</div>
-					
-					<div class="row">
-						<p><b>TJHComp 2021.</b></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div id="ad-box">
-	
-		<p>[ Ad Box Container ]</p>
-		<p>No Ads</p>
-		<p>Currently a developmental prospect...</p>
-		<p>This will only display site related content only...</p>
-	
-	</div>
-	
+          <div class="row">
+            <a href="demohome.html">
+              <img src="media/images/logo/tjhcomp_logo.png" alt="TJH Logo">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+
+<script>
+
+function topFunction() {
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+}
+
+
+function mobileMenuFunction() {
+  document.getElementById("mobileMenu").classList.toggle("show");
+}
+
+function positionScroll() {
+	if (document.documentElement.scrollTop > 21 || document.body.scrollTop > 21) {
+		document.getElementById("header").style.paddingBottom = "4px";
+		document.getElementById("ad-box").style.position = "fixed";
+		document.getElementById("ad-box").style.top = "60px";
+		document.getElementById("ad-box").style.bottom = 0;
+	} else {
+		document.getElementById("header").style.paddingBottom = 0;
+		document.getElementById("ad-box").style.position = "absolute";
+		document.getElementById("ad-box").style.top = "90px";
+		document.getElementById("ad-box").style.bottom = "-50px";
+	}
+}
+
+
+function scrollToTop() {
+	if (document.documentElement.scrollTop > 350 || document.body.scrollTop > 350) {
+		document.getElementById("scroll-top").style.display = "block";
+	} else {
+		document.getElementById("scroll-top").style.display = "none";
+	}
+}
+
+window.onscroll = function() { positionScroll(); scrollToTop(); };
+
+</script>
+
 
 </body>
 </html>
