@@ -4,151 +4,156 @@
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-
 <link rel="icon" type="image/png" href="media/assets/icons/tjhcomp_favicon.png"/>
 
-<title>TJHComp | Demo Home Page</title>
+<title>TJHComp | Home</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-<link rel="stylesheet" type="text/css" href="css/092342.css"/>
-<link rel="stylesheet" type="text/css" href="css/237494.css"/>
-<link rel="stylesheet" type="text/css" href="css/884159.css"/>
+<link rel="stylesheet" type="text/css" href="css/117199.css"/> <!-- CSS Design (Home) -->
+<link rel="stylesheet" type="text/css" href="css/884159.css"/> <!-- CSS View Design (Mobile, Tablets) -->
+<link rel="stylesheet" type="text/css" href="css/556127.css"/> <!-- CSS Coming Soon - Delete After 3pm 11/10/2021  -->
 
-	
-<style>
-
-@media screen and (max-width: 600px) {
-  #article{
-    margin-left: 130px;
-    margin-right: 0;
-    margin-left: 0;
-  }
-}
-	
-</style>
-	
-	
 </head>
 <body>
 
 <div id="wrapper">
-  <div id="header" class="border">
-    <div id="head-base">
-      <div onclick="mobileMenuFunction()" id="head-mobile">
-        <span class="fa fa-bars"></span>
-        <div id="mobileMenu" class="mobile-links">
-          <a href="#" class="current">Home</a>
-          <a href="computing.html">Computing</a>
-          <a href="programming.html">Programming</a>
-          <a href="networking.html">Networking</a>
-          <a href="security.html">Security</a>
+  <div id="tjh-head-sector" class="tjh-border-bg">
+    <div id="tjh-head-base">
+      <div onclick="openMobDrawer()" id="tjh-mob-drawer">
+      <span class="fa fa-bars"></span>
+        <div id="mobMenu"  class="tjh-mob-menu tjh-border-bg">
+		  <div class="mob-nav-menu">
+            <div id="mob-nav-1"></div>
+		    <div id="mob-nav-2"></div>
+		    <div id="mob-nav-3"></div>
+		    <div id="mob-nav-4"></div>
+		    <div id="mob-nav-5"></div>
+          </div>
         </div>
       </div>
-      
-	  <div id="logo">
+
+      <div id="tjh-logo-sector">
         <a href="index.html">
           <img src="media/images/logo/tjhcomp_logo.png" alt="TJH Logo">
         </a>
-        <input id="mobile-search" type="text" name="search" placeholder="Search">
       </div>
-      
-	  <div id="main-menu">
-        <a href="#" class="current">Home</a>
-        <a href="#">Computing</a>
-        <a href="#">Programming</a>
-        <a href="#">Networking</a>
-        <a href="#">Security</a>
-        <input id="search" type="text" name="search" placeholder="Search">
+
+      <div id="tjh-primary-nav">
+          <div id="prim-nav-1" class="current"></div>
+		  <div id="prim-nav-2"></div>
+		  <div id="prim-nav-3"></div>
+		  <div id="prim-nav-4"></div>
+		  <div id="prim-nav-5"></div>
       </div>
-	</div>
+	  <input id="tjh-search" type="text" name="search" placeholder="Search" autocomplete="off">
+    </div>
   </div>
 
-  <div id="sub-menu">
-    <a href="#">Link</a>
+  <div id="tjh-sec-menu">
+    <a href="#">About</a>
   </div>
 
-  <div id="ad-box" style="background: none; border: none;">
-    <p>[ Ad Box Container ]</p>
-    <p>No Ads</p>
-    <p>Currently a developmental prospect...</p>
-    <p>This will only display site related content only...</p>
+  <div id="tjh-warn-note"></div>
+  <div id="tjh-content-menu" style="background: none;"></div>
+
+  <div id="tjh-ad-box" style="background: none;">
+    
   </div>
 
-  <div id="article">
-  
-    <div class="article-body">
-      <div class="article-section">
-	  
-        <h2>Home Demo Testing</h2>
+  <div id="tjh-home-sector">
+    <div class="home-body">
+      <div class="home-update-section"> 
 
-        <div class="warning-message">    
-          <h4>Notice</h4>
-          <P>This is a testing page only. Demo to publicly view my page based on the design given to the page.</P>
-          <p>Functionality on this page such as javascript (limited), hyperlinks, media and other page context are disabled.</p>
-          <p>Displaying my full website on <b>October, 10th 2021</b>.</p>
-        </div>
+        <h2>Title</h2>
+        <h3>Title</h3>
 
-        <h3>Demo Testing</h3>
-        <p>Demo paragraph testing.</p>
-	  
-        <div class="post-container">
-          <a href="demoarticle.html">
-            <div class="post-information">
-              <h2>Demo Article</h2>
-              <span>[ date ]</span>
-              <p>This is a test section for accessing the demo article...</p>
-            </div>
-            <div class="post-image">
-              <div class="fake-img"></div>
-            </div>
-		  </a>
-        </div>
-
-        <div class="ad-box">
+        <div class="tjh-ad-box">
           <p>[ Ad Box Container ]</p>
           <p>No Ads</p>
           <p>Currently a developmental prospect...</p>
           <p>This will only display site related content only...</p>
         </div>
+  
+        <div class="tjh-update-sector">
+			  <div class="update-head" id="update-head-1"></div>
+              <div class="update-date" id="update-date-1"></div>
+              <div class="update-info" id="update-info-1"></div>
+              <div class="update-img" id="update-img-1"></div>
+        </div>
+
+        <div class="tjh-update-sector">
+			  <div class="update-head" id="update-head-2"></div>
+              <div class="update-date" id="update-date-2"></div>
+              <div class="update-info" id="update-info-2"></div>
+              <div class="update-img" id="update-img-2"></div>
+        </div>
+
+        <div class="tjh-update-sector">
+			  <div class="update-head" id="update-head-3"></div>
+              <div class="update-date" id="update-date-3"></div>
+              <div class="update-info" id="update-info-3"></div>
+              <div class="update-img" id="update-img-3"></div>
+        </div>
+
+        <div class="tjh-update-sector">
+			  <div class="update-head" id="update-head-4"></div>
+              <div class="update-date" id="update-date-4"></div>
+              <div class="update-info" id="update-info-4"></div>
+              <div class="update-img" id="update-img-4"></div>
+        </div>
+
+        <div class="tjh-update-sector">
+			  <div class="update-head" id="update-head-5"></div>
+              <div class="update-date" id="update-date-5"></div>
+              <div class="update-info" id="update-info-5"></div>
+              <div class="update-img" id="update-img-5"></div>
+        </div>
+
       </div>
 	  
-      <div id="scroll-top" onclick="topFunction()"><span>Scroll</span><br><b>TOP</b></div>
-	  
-      <div class="border" id="footer">	
-        <div id="footer-base">
+      <div id="tjh-top-scroll" onclick="scrollToTop()">
+        <span>Scroll</span><br><b>TOP</b>
+      </div>
+
+      <div class="tjh-border-bg" id="tjh-foot-sector">
+        <div id="tjh-foot-base">
+
           <div class="row">
-            <p>Footer information...</p>
+            <div id="foot-info-sector"></div>
           </div>
 
-          <div class="row footer-link-container">
-            <div class="col no-border">
-              <h5>Site</h5>
-              <a href="#">Computing</a>
-              <a href="#">Programming</a>
-              <a href="#">Networking</a>
-              <a href="#">Security</a>
-            </div>
-            
-            <div class="col">
-              <h5>Information</h5>
-              <a href="#">Link</a>
-              <a href="#">Link</a>
-              <a href="#">Link</a>
+          <div class="row foot-menu-sector">
+
+            <div class="foot-col borderless">
+              <div id="foot-site-head"></div>
+              <div id="foot-nav-1"></div>
+              <div id="foot-nav-2"></div>
+              <div id="foot-nav-3"></div>
+              <div id="foot-nav-4"></div>
             </div>
 
-            <div class="col socials">
-              <h5>Social Media</h5>
-              <a href="https://www.facebook.com/tjh.comp" target="_blank" class="fa fa-facebook-square"></a>
-              <a href="https://www.instagram.com/tjhcomputing/" target="_blank" class="fa fa-instagram"></a>
-              <a href="https://twitter.com/TJHComputing" target="_blank" class="fa fa-twitter-square"></a>
+            <div class="foot-col">
+              <div id="foot-info-head"></div>
+              <div id="foot-nav-5"></div>
+              <div id="foot-nav-6"></div>
+              <!-- <div id="foot-nav-7"></div>
+              <div id="foot-nav-8"></div> -->
             </div>
+
+            <div class="foot-col socials">
+              <div id="foot-social-head"></div>
+              <div id="foot-nav-9"></div>
+              <div id="foot-nav-10"></div>
+              <div id="foot-nav-11"></div>
+              <div id="foot-nav-12"></div>
+             </div>
           </div>
 
           <div class="row" style="color: #73777f;">
-            <p><b>TJHComp 2021.</b></p>
+			<div id="foot-logo-name"></div>
           </div>
-		
+
           <div class="row">
             <a href="index.html">
               <img src="media/images/logo/tjhcomp_logo.png" alt="TJH Logo">
@@ -160,45 +165,27 @@
   </div>
 </div>
 
+<div class="tjh-cs-container" id="tjh-cs">
 
-<script>
+   <div id="cs-notice"></div>
 
-function topFunction() {
-	document.body.scrollTop = 0;
-	document.documentElement.scrollTop = 0;
-}
+   <div class="cs-content">
+      <div class="logo">
+		<img src="media/images/logo/tjhcomp_logo.png" alt="TJH Logo">
+      </div>
+      <div class="cs-countdown-sector">
+		<span id="cs-countdown"></span>
+      </div>
+      <div class="cs-socials">
+		<a href="https://www.facebook.com/tjh.comp" target="_blank" class="fa fa-facebook-square"></a>
+		<a href="https://twitter.com/TJHComputing" target="_blank" class="fa fa-twitter-square"></a>
+		<a href="https://www.instagram.com/tjhcomputing/" target="_blank" class="fa fa-instagram"></a>
+      </div>
+   </div>
+</div>
 
-
-function mobileMenuFunction() {
-  document.getElementById("mobileMenu").classList.toggle("show");
-}
-
-function positionScroll() {
-	if (document.documentElement.scrollTop > 21 || document.body.scrollTop > 21) {
-		document.getElementById("header").style.paddingBottom = "4px";
-		document.getElementById("ad-box").style.position = "fixed";
-		document.getElementById("ad-box").style.top = "60px";
-		document.getElementById("ad-box").style.bottom = 0;
-	} else {
-		document.getElementById("header").style.paddingBottom = 0;
-		document.getElementById("ad-box").style.position = "absolute";
-		document.getElementById("ad-box").style.top = "90px";
-		document.getElementById("ad-box").style.bottom = "-50px";
-	}
-}
-
-
-function scrollToTop() {
-	if (document.documentElement.scrollTop > 350 || document.body.scrollTop > 350) {
-		document.getElementById("scroll-top").style.display = "block";
-	} else {
-		document.getElementById("scroll-top").style.display = "none";
-	}
-}
-
-window.onscroll = function() { positionScroll(); scrollToTop(); };
-
-</script>
+<script type="text/javascript" src="js/7739.js"></script>
+<script type="text/javascript" src="js/1026.js"></script>
 
 
 </body>
