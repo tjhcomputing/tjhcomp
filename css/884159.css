@@ -1,1 +1,70 @@
+.tjh-cs-container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 111;
+  top: 0;
+  left: 0;
+  background-color: #000817;
+  background: rgba(0,8,23,0.9);
+  overflow: hidden;
+}
 
+.cs-content {
+  background-color: #000817;
+  padding: 200px 0;
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.cs-content .logo img {
+  max-width: 400px;
+  width: 100%;
+  display: block;
+  margin: 5px auto;
+}
+
+.cs-content .cs-socials {
+  text-align: center;
+}
+
+.cs-content .cs-socials a {
+  font-size: 50px;
+  text-decoration: none;
+  color: #99add6;
+}
+
+.cs-content .cs-socials a:hover {
+  color: #00ffcc;
+}
+
+.cs-countdown-sector span {
+  font-size: 40px;
+  text-shadow: 0 3px 4px rgba(0,0,0,0.8);
+  color: #99add6;
+  padding: 20px 0 50px;
+  display: block;
+}
+
+#cs-notice {
+  font-size: 11px;
+  color: white;
+  background-color: #ff4040;
+  border-bottom: 3px solid #ff3838;
+  letter-spacing: 0.6px;
+  padding: 10px 0;
+  height: auto;
+  z-index: 1;
+  font-weight: bold;
+  text-align: center;
+  cursor: none;
+  position: fixed;
+  top: 0;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%,0);
+}
