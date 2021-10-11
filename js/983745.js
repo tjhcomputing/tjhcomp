@@ -112,4 +112,4 @@ var countdown = setInterval(function() {
 
 document.getElementById("tjh-warn-note").innerHTML = "<span class='fa fa-cogs'></span> <span class='fa fa-exclamation-triangle'></span> Site currently has ongoing construction. You might expect issues and missing content... <span class='fa fa-exclamation-triangle'></span> <span class='fa fa-wrench'></span>";
 
-document.getElementById("cs-notice").innerHTML = "<span class='fa fa-cogs'></span> <span class='fa fa-exclamation-triangle'></span> Site currently will continue with ongoing construction. Some functions may not work as expected yet... <span class='fa fa-exclamation-triangle'></span> <span class='fa fa-wrench'></span>";
+document.getElementById("cs-notice").innerHTML = "<span class='fa fa-cogs'></span> <span class='fa fa-exclamation-triangle'></span> Site currently will continue with ongoing construction. Working on the issues... <span class='fa fa-exclamation-triangle'></span> <span class='fa fa-wrench'></span>";
