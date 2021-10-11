@@ -61,15 +61,15 @@ document.getElementById("foot-nav-9").innerHTML = "<a href='https://www.facebook
 document.getElementById("foot-nav-10").innerHTML = "<a href='https://www.instagram.com/tjhcomputing/' target='_blank' class='fa fa-instagram'></a>";
 document.getElementById("foot-nav-11").innerHTML = "<a href='https://twitter.com/TJHComputing' target='_blank' class='fa fa-twitter-square'></a>";
 //document.getElementById("foot-nav-12").innerHTML = "<a href='#'>Link</a>";
-document.getElementById("foot-info-sector").innerHTML = "<p>Footer information goes here.</p>";
+document.getElementById("foot-info-sector").innerHTML = "<p></p>";
 document.getElementById("foot-logo-name").innerHTML = "<p><b><span class='fa fa-copyright'></span> TJHComp 2021.</b></p>";
 document.getElementById("foot-site-head").innerHTML = "<h5>Site</h5>";
 document.getElementById("foot-info-head").innerHTML = "<h5>Information</h5>";
 document.getElementById("foot-social-head").innerHTML = "<h5>Social Media</h5>";
 
-
-var countDownDate = new Date("Oct 12, 2021 15:00:00").getTime();
 var countdown = setInterval(function() {
+
+  var countDownDate = new Date("Oct 12, 2021 15:00:00").getTime();
   
   var currentTime = new Date().getTime();
   var timer = countDownDate - currentTime;
@@ -83,29 +83,29 @@ var countdown = setInterval(function() {
 	document.body.style.overflow = "auto";
   }
 
-  var minuteQuote = " minutes";
-  var hourQuote = " hours ";
-  var dayQuote = " days ";
+  var minuteword = " minutes";
+  var hourword = " hours ";
+  var dayword = " days ";
 
   if (minutes == 1) {
-	  minuteQuote = " minute";
+	  minuteword = " minute";
   } else {
-	  minuteQuote;
+	  minuteword;
   }
 
   if (hours == 1) {
-	  hourQuote = " hour ";
+	  hourword = " hour ";
   } else {
-	  hourQuote;
+	  hourword;
   }
   
   if (days == 1) {
-	  dayQuote = " day ";
+	  dayword = " day ";
   } else {
-	  dayQuote;
+	  dayword;
   }
 
-  document.getElementById("cs-countdown").innerHTML = days + dayQuote + hours + hourQuote + minutes + minuteQuote;
+  document.getElementById("cs-countdown").innerHTML = days + dayword + hours + hourword + minutes + minuteword;
   document.body.style.overflow = "hidden";
 
 }, 1000);
