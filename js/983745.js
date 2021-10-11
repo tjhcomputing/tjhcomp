@@ -68,7 +68,7 @@ document.getElementById("foot-info-head").innerHTML = "<h5>Information</h5>";
 document.getElementById("foot-social-head").innerHTML = "<h5>Social Media</h5>";
 
 
-var countDownDate = new Date("Oct 11, 2021 15:00:00").getTime();
+var countDownDate = new Date("Oct 12, 2021 15:00:00").getTime();
 var countdown = setInterval(function() {
   
   var currentTime = new Date().getTime();
