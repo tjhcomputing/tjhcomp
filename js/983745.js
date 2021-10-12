@@ -65,7 +65,8 @@ document.getElementById("foot-info-sector").innerHTML = "<p></p>";
 document.getElementById("foot-logo-name").innerHTML = "<p><b><span class='fa fa-copyright'></span> TJHComp 2021.</b></p>";
 document.getElementById("foot-site-head").innerHTML = "<h5>Site</h5>";
 document.getElementById("foot-info-head").innerHTML = "<h5>Information</h5>";
-docum
+document.getElementById("foot-social-head").innerHTML = "<h5>Social Media</h5>";
+
 const articleAuthor = {
 	aid: 1251,
 	fName:"Thomas",
