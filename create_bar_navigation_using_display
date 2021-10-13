@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/png" href="media/assets/icons/tjhcomp_favicon.png"/>
+
+<title>TJHComp | Creating Bar Navigation Using Inline Display</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<link rel="canonical" href="/web/tweet-button">
+
+<link rel="stylesheet" type="text/css" href="css/092342.css"/>
+<link rel="stylesheet" type="text/css" href="css/237494.css"/>
+<link rel="stylesheet" type="text/css" href="css/117199.css"/>
+
+</head>
+<body>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v12.0" nonce="0w7Z6Fcl"></script>
+
+
+<div id="wrapper">
+  <div id="tjh-head-sector" class="tjh-border-bg">
+    <div id="tjh-head-base">
+      <div onclick="openMobDrawer()" id="tjh-mob-drawer">
+      <span class="fa fa-bars"></span>
+        <div id="mobMenu"  class="tjh-mob-menu tjh-border-bg">
+		  <div class="mob-nav-menu">
+            <div id="mob-nav-1"></div>
+		    <div id="mob-nav-2"></div>
+		    <div id="mob-nav-3"></div>
+		    <div id="mob-nav-4"></div>
+		    <div id="mob-nav-5"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="tjh-logo-sector">
+        <a href="index.html">
+          <img src="media/images/logo/tjhcomp_logo.png" alt="TJH Logo">
+        </a>
+      </div>
+
+      <div id="tjh-primary-nav">
+          <div id="prim-nav-1"></div>
+		  <div id="prim-nav-2"></div>
+		  <div id="prim-nav-3"></div>
+		  <div id="prim-nav-4" class="current"></div>
+		  <div id="prim-nav-5"></div>
+      </div>
+	  <!--<input id="tjh-search" type="text" name="search" placeholder="Search" autocomplete="off">-->
+    </div>
+  </div>
+
+  <div id="tjh-sec-menu" style="height: 30px;">
+  </div>
+
+  <div id="tjh-warn-note"></div>
+  <div id="tjh-content-menu">
+    <div class="div">
+      <a href="#website-navigation">Website Navigation</a>
+    </div>
+    <div class="div2">
+      <a href="#what-is-it">What is it?</a>
+      <a href="#how-does-it-work">How does it work?</a>
+    </div>
+    <div class="div">
+      <a href="#bar-navigation">Bar Navigation</a>
+    </div>
+    <div class="div2">
+      <a href="#create-the-navigation">Create the Navigation</a>
+      <a href="#dont-float-just-display">Don't Float Just Display</a>
+      <a href="#understanding-display-methods">Understanding Display Methods</a>
+      <a href="#inline-and-inline-block">Inline and Inline-Block</a>
+      <!--<a href="#avoid-block">Avoid Block</a>-->
+	  <a href="#resolve-problem-with-inline-gaps">Resolving Problem with Inline Navigation Gaps and Overlaps</a>
+    </div>
+    <div class="div">
+      <a href="#conlusion">Conclusion</a>
+    </div>
+  </div>
+
+  <div id="tjh-ad-box"></div>
+
+  <div id="article">
+    <div id="20931" style="display: none;"></div>
+    <div class="article-body">
+      <div class="article-section">
+        <div class="article-header">
+          <div class="directory">
+            <span class="fa fa-folder connect"></span><span class="name">Home</span><span class="fa fa-chevron-right connect"></span><span class="name">Programming</span><span class="fa fa-chevron-right connect"></span><span class="name">Blog</span><span class="fa fa-chevron-down connect"></span>
+          </div>
+
+          <h1>Creating Bar Navigation Using Inline Display</h1>
+          <div class="row info">
+		    <div id="article-header-info">
+               <span class="fa fa-user article-icon"></span> <span id="demo2"></span> 
+			   <span class="fa fa-calendar article-icon"></span> <span id="demo"></span> 
+			   <span class="fa fa-clock-o article-icon"></span> <span id="demo4"></span>
+			</div>
+          </div>
+
+          <div class="row info">
+		    <div id="article-header-tags">
+              <div>
+                <span class="fa fa-tag article-icon"></span>
+                <span class="article-taglist">
+				  <span id="demo3"></span>
+                </span>
+              </div>
+			</div>
+          </div>
+        </div>
+
+        <div class="article-share">	  
+		  <div class="social-btn facebook-btn">
+		  <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+		  </div>
+		  <div class="social-btn twitter-btn">
+
+		  <a class="twitter-share-button" href="https://twitter.com/intent/tweet">Tweet</a>
+		  <script>window.twttr = (function(d, s, id) {
+		    var js, fjs = d.getElementsByTagName(s)[0],
+			  t = window.twttr || {};
+		    if (d.getElementById(id)) return t;
+		    js = d.createElement(s);
+		    js.id = id;
+		    js.src = "https://platform.twitter.com/widgets.js";
+		    fjs.parentNode.insertBefore(js, fjs);
+
+		    t._e = [];
+		    t.ready = function(f) {
+			  t._e.push(f);
+		    };
+
+		    return t;
+		  }(document, "script", "twitter-wjs"));</script> 
+		  </div>
+        </div>
+
+        <h2 id="website-navigation">Website Navigation</h2>
+        <h3 id="what-is-it?">What is it?</h3>
+        <p>Website navigation is one of the major factors for websites, they have a primary responsiblility and purpose for moving their visitors from one page to another. Without a navigation, it would be difficult for website visitors to adapt the interest on browsing with and becomes more frustrating for them to find pages they want to visit.</p>
+        <h3 id="how-does-it-work">How does it work?</h3>
+		<p>When websites are visited, visitors often see a navigation across every page in different ways and approaches to directing them to a specific page. Those may be seen to be Bar Navigation, Side Navigation and Footer Navigation. They all have different purposes on how they are used to interact for the visitor.</p>
+
+        <h2 id="bar-navigation">Bar Navigation</h2>
+        <p>In this topic, will explain about creating a Repsonsive Bar Navigation with the display method. Constucting a navigation has to be planned out well before building, we have to consider why and how to want our navigation to interact. Most importantly, we need to consider how we would design to attract interest to our target audiences.</p>
+
+        <div class="row">
+          <div class="content-container">
+            <div class="content-header">
+              <h5>Requirements</h5>
+            </div>
+            <div class="content-list">
+              <ol>
+                <li><span>HTML</span></li>
+                <li><span>CSS</span></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <!--<p>To understand HTML and CSS, refer <a href="understanding_frontend_development.html#32847" class="tooltip">here<span class="tooltiptext">The Understanding of Frontend Development</span></a> for an understanding of Front End Development.</p>-->
+
+        <h3 id="create-the-navigation">Create the Navigation</h3>
+		<p>Create a html file where we will create our bar navigation on.</p>
+
+        <div class="row">
+          <div class="code-container">
+            <div class="preview-demo-header">
+              <h5>HTML Nav Bar</h5>
+            </div>
+            <div class="code-sample">
+              <code>&lt;div id="nav-bar"&gt;</code>
+			  <code>&nbsp;&nbsp;&lt;a href="#home"&gt;Home&lt;/a&gt;</code>
+			  <code>&nbsp;&nbsp;&lt;a href="#page1"&gt;Page 1&lt;/a&gt;</code>
+			  <code>&nbsp;&nbsp;&lt;a href="#page2"&gt;Page 2&lt;/a&gt;</code>
+			  <code>&nbsp;&nbsp;&lt;a href="#page3"&gt;Page 3&lt;/a&gt;</code>
+			  <code>&lt;/div&gt;</code>
+            </div>
+          </div>
+
+          <p>Creating a div container called <code>nav-bar</code> as our id containing each link inside with the <code>a</code> tags.</p>
+        </div>
+
+        <h3 id="dont-float-just-display">Don't Float Just Display</h3>
+        <p> One of the main differences why we could use <b>Display</b> instead of <b>Float</b> is that we can align our navigation responsive as possible. We can neatly position the navigation without it spreading across the page.
+		Float are diffcult to align centering but can only make it responsive using percentage for most cases but shrinking can cause navigation to be difficult scale. Using display can make a nvigation more responsive as it can get. Some considerations are in place to mind.</p>
+
+        <div class="row">
+          <div class="code-container">
+            <div class="preview-demo-header">
+              <h5>Styling the Nav Bar with CSS</h5>
+            </div>
+            <div class="code-sample">
+              <code>#nav-bar {</code>
+			  <code>&nbsp;&nbsp;background-color: MediumSpringGreen;</code>
+			  <code>&nbsp;&nbsp;width: 100%;</code>
+			  <code>&nbsp;&nbsp;height: 50px;</code>
+			  <code>&nbsp;&nbsp;text-align: center;</code>
+			  <code>}</code>
+			  <br>
+			  <code>#nav-bar a {</code>
+			  <code>&nbsp;&nbsp;background-color: teal;</code>
+			  <code>&nbsp;&nbsp;color: white;</code>
+			  <code>&nbsp;&nbsp;padding: 16px 10px;</code>
+			  <code>&nbsp;&nbsp;font-size: 16px;</code>
+			  <code>&nbsp;&nbsp;font-weight: bold;</code>
+			  <code>&nbsp;&nbsp;text-decoration: none;</code>
+			  <code>}</code>
+            </div>
+          </div>
+        </div>
+		
+		<h3 id="understanding-display-methods">Understanding Display Methods</h3>
+        <p>Display method has different elements of how they are used for navigation methods. Three elements you should know about are <b>inline</b>, <b>Inline-Block</b> and <b>Block</b> elements.</p>
+		
+		<h4>Inline</h4>
+		<p></p>
+        <h4>Inline-Block</h4>
+		<p></p>
+		<h4>Block</h4>
+		<p></p>
+
+		<h3 id="inline-and-inline-block">Inline and Inline-Block</h3>
+        <p>Display method has different elements of how they are used for navigation methods. Three elements you should know about are <b>inline</b>, <b>Inline-Block</b> and <b>Block</b> elements.</p>
+
+        <div class="row">
+          <div class="code-container">
+            <div class="preview-demo-header">
+              <h5>Adding Inline-Block</h5>
+            </div>
+            <div class="code-sample">
+			  <code>#nav-bar a {</code>
+			  <code>&nbsp;&nbsp;background-color: teal;</code>
+			  <code>&nbsp;&nbsp;color: white;</code>
+			  <code>&nbsp;&nbsp;padding: 16px 10px;</code>
+			  <code>&nbsp;&nbsp;font-size: 16px;</code>
+			  <code>&nbsp;&nbsp;font-weight: bold;</code>
+			  <code>&nbsp;&nbsp;text-decoration: none;</code>
+			  <code>&nbsp;&nbsp;/* Add the display element of inline-block */</code>
+			  <code>&nbsp;&nbsp;display: inline-block;</code>
+			  <code>}</code>
+            </div>
+          </div>
+        </div>
+
+		<h3 id="resolve-problem-with-inline-gaps">Resolving Problem with Inline Navigation Gaps and Overlaps</h3>
+        <p>Display method has different elements of how they are used for navigation methods. Three elements you should know about are <b>inline</b>, <b>Inline-Block</b> and <b>Block</b> elements.</p>
+
+        <div class="row">
+          <div class="code-container">
+            <div class="preview-demo-header">
+              <h5>Fixing Gaps and Overlaps</h5>
+            </div>
+            <div class="code-sample">
+			  <code>#nav-bar a {</code>
+			  <code>&nbsp;&nbsp;background-color: teal;</code>
+			  <code>&nbsp;&nbsp;color: white;</code>
+			  <code>&nbsp;&nbsp;padding: 16px 10px;</code>
+			  <code>&nbsp;&nbsp;font-size: 16px;</code>
+			  <code>&nbsp;&nbsp;font-weight: bold;</code>
+			  <code>&nbsp;&nbsp;text-decoration: none;</code>
+			  <code>&nbsp;&nbsp;display: inline-block;</code>
+			  <code>&nbsp;&nbsp;/* Add the margin for the navigation links */</code>
+			  <code>&nbsp;&nbsp;margin: 0 -2px 0 -2.5px;</code>
+			  <code>&nbsp;&nbsp;/* Sometimes you might need to adjust the right margins */</code>
+			  <code>}</code>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+	  
+      <div id="tjh-top-scroll" onclick="scrollToTop()">
+        <span>Scroll</span><br><b>TOP</b>
+      </div>
+
+      <div class="tjh-border-bg" id="tjh-foot-sector">
+        <div id="tjh-foot-base">
+
+          <div class="row">
+            <div id="foot-info-sector"></div>
+          </div>
+
+          <div class="row foot-menu-sector">
+
+            <div class="foot-col borderless">
+              <div id="foot-site-head"></div>
+              <div id="foot-nav-1"></div>
+              <div id="foot-nav-2"></div>
+              <div id="foot-nav-3"></div>
+              <div id="foot-nav-4"></div>
+            </div>
+
+            <div class="foot-col">
+              <div id="foot-info-head"></div>
+              <div id="foot-nav-5"></div>
+              <div id="foot-nav-6"></div>
+              <!-- <div id="foot-nav-7"></div>
+              <div id="foot-nav-8"></div> -->
+            </div>
+
+            <div class="foot-col socials">
+              <div id="foot-social-head"></div>
+              <div id="foot-nav-9"></div>
+              <div id="foot-nav-10"></div>
+              <div id="foot-nav-11"></div>
+              <div id="foot-nav-12"></div>
+             </div>
+          </div>
+
+          <div class="row" style="color: #73777f;">
+			<div id="foot-logo-name"></div>
+          </div>
+
+          <div class="row">
+            <a href="index.html">
+              <img src="media/images/logo/tjhcomp_logo.png" alt="TJH Logo">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="js/983621.js"></script>
+<script type="text/javascript" src="js/983745.js"></script>
+
+<script>
+  document.getElementById("demo").innerHTML = month[9] + " " + day[10] + ", " + year[5];
+  document.getElementById("demo2").innerHTML = articleAuthor.authName();
+  document.getElementById("demo3").innerHTML = cssTag + ", " + htmlTag + ", " + navTag;
+  document.getElementById("demo4").innerHTML = readNum[9] + " min read";
+</script>
+
+</body>
+</html>
