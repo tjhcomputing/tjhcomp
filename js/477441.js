@@ -1,4 +1,4 @@
-var updateLink1 = "creating_inline_bar_nav.html";
+var updateLink1 = "create_bar_navigation_using_display.html";
 var updateLink2 = "#";
 var updateLink3 = "#";
 var updateLink4 = "#";
