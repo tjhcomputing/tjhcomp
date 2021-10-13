@@ -12,7 +12,7 @@ document.getElementById("update-img-1").innerHTML = "<a href='" + updateLink1 + 
 document.getElementById("update-head-2").innerHTML = "<a href='" + updateLink2 + "'>Coming Soon</a>";
 document.getElementById("update-date-2").innerHTML = "<a href='" + updateLink2 + "'></a>";
 document.getElementById("update-info-2").innerHTML = "<a href='" + updateLink2 + "'>Coming Soon.</a>";
-document.getElementById("update-img-3").innerHTML = "<a href='" + updateLink2 + "'><img src='media/images/computing/blog/default/tjhcomp_preview.png' alt='TJH Comp Preview'></a>";
+document.getElementById("update-img-2").innerHTML = "<a href='" + updateLink2 + "'><img src='media/images/computing/blog/default/tjhcomp_preview.png' alt='TJH Comp Preview'></a>";
 
 document.getElementById("update-head-3").innerHTML = "<a href='" + updateLink3 + "'>Coming Soon</a>";
 document.getElementById("update-date-3").innerHTML = "<a href='" + updateLink3 + "'></a>";
