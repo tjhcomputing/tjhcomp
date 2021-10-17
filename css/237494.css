@@ -1,3 +1,4 @@
+/* --- MOBILE DEVICES --- */
 @media only screen and (max-width: 1400px) {
   #article {
     margin-left: 210px;
@@ -8,9 +9,17 @@
     width: 200px;
   }
 
-  #tjh-content-menu {
+  #tjh-cont-menu {
     width: 200px;
   } 
+}
+
+@media only screen and (max-width: 870px) {
+  .tjh-prev-cont, .tjh-code-cont {
+    width: 300px;
+    margin: 10px -2px 10px -2.5px;
+    box-shadow: 0 8px 13px rgba(0,8,23,0.3);
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -72,7 +81,7 @@
     display: none;
   }
    
-  #tjh-search, input {
+  #tjh-srch, input {
     right: 0;
     z-index: 100;
   }
@@ -88,17 +97,17 @@
     padding-left: 70px;
   }
 
-  #tjh-content-menu {
-    width: 90px;
+  #tjh-cont-menu {
+    width: 99px;
   }
    
   #article {
     margin-right: 0;
-    margin-left: 108px;
+    margin-left: 100px;
   }
    
-  .div a, .div2 a {
-    font-size: 8px;
+  .tjh-cont-main a, .tjh-cont-top a {
+    font-size: 9px;
     letter-spacing: 0.2px;
     padding-left: 3px;
     padding-right: 3px;
@@ -109,37 +118,37 @@
     bottom: 340px;
   }
   
-  .article-share {
+  .tjh-art-shr {
     padding: 0 10px;
   }
    
-  .article-section h2,
-  .article-section h3,
-  .article-section p {
+  .tjh-art-sect h2,
+  .tjh-art-sect h3,
+  .tjh-art-sect p {
     line-height: 1.2;
     letter-spacing: 0.4px;
   }
 
-  .article-section h2 {
-    padding: 10px 10px 7px 10px;
+  .tjh-art-sect h2 {
+    padding: 10px 10px 10px 10px;
 	font-size: 20px;
   }
 
-  .article-section h3 {
-    padding: 5px 10px 6px 15px;
+  .tjh-art-sect h3 {
+    padding: 5px 10px 10px 15px;
 	font-size: 18px;
   }
 
-  .article-section p,
-  .article-section h4 {
-    padding: 10px 20px 20px 20px;
+  .tjh-art-sect p,
+  .tjh-art-sect h4 {
+    padding: 0 20px 10px 20px;
   }
 
-  .article-section p {
+  .tjh-art-sect p {
 	font-size: 12px;
   }
 
-  .row p code {
+  .tjh-rw p code {
     padding: 2px 4px;
     font-size: 12px;
   }
@@ -183,83 +192,169 @@
     width: 100%;    
   }
 
-  .image-sqaure, .image-portrait, .image-landscape,
-  .image-caption-sqaure, .image-caption-portrait, 
-  .image-caption-landscape {
+  .tjh-img-sqa, .tjh-img-por, .tjh-img-lan,
+  .tjh-img-cap-sqa, .tjh-img-cap-por, 
+  .tjh-img-cap-lan {
     max-width: 230px;
   }
    
-  .content-list {
+  .tjh-cont-lst {
     max-height: 200px;
     min-width: 230px;
     padding: 5px 10px;
   }
    
-  .content-container {
-    max-width: 250px;
+  .tjh-cont {
+    max-width: 195px;
     margin: 10px -2px 10px -2.5px;
     box-shadow: 0 8px 13px rgba(0,8,23,0.3);
   }
    
-  .article-section table, .article-section td, 
-  .article-section th {
+  .tjh-art-sect table, .tjh-art-sect td, 
+  .tjh-art-sect th {
     font-size: 11px;
   }
    
-  .article-section td, .article-section th {
+  .tjh-art-sect td, .tjh-art-sect th {
     padding: 2px 4px;
   }   
    
-  .preview-container, 
-  .code-container {
-    width: 250px;
+  .tjh-prev-cont, 
+  .tjh-code-cont {
+    width: 195px;
     margin: 10px -2px 10px -2.5px;
     box-shadow: 0 8px 13px rgba(0,8,23,0.3);
   }
    
-  .code-tabs {
+  .tjh-code-tb {
     width: 250px;
   }
    
-  .codetype {
+  .tjh-code-typ {
     padding: 5px 0;
     font-size: 13px;
     width: 60px;
     letter-spacing: 0.3px;
   }
    
-  .preview-demo, .preview-demo iframe {
+  .tjh-prev-dmo, .tjh-prev-dmo iframe {
     height: 250px;
     width: 250px;
   }   
    
-  .preview-code h5, .preview-demo h5 {
+  .tjh-prev-code h5, .tjh-prev-dmo h5 {
     margin: 0 0 3px;
     padding: 2px 0;
     width: 250px;
     text-align: center;
   }
    
-  .codeview {
+  .tjh-code-view {
     height: 232px;
     width: 250px;
     padding: 10px 0;
     font-size: 9px;
   }
 
-  .codeview code {
+  .tjh-code-view code {
     font-size: 12px;
   }
   
-  .article-header h1 {
+  .tjh-art-head h1 {
     font-size: 18px;
   }
   
-  .directory span{
+  .tjh-site-dir span{
     font-size: 9px;
   }
   
-  .article-header span {
+  .tjh-art-head span {
     font-size: 11px;
+  }
+
+  #tjh-art-head-tags .tjh-rw {
+    display: block;
+	padding: 2px 5px;
+  }
+
+  #tjh-art-head-info .tjh-rw {
+    display: block;
+	padding: 2px 5px;
+  }  
+}
+
+@media only screen and (max-width: 600px) {
+  p code {
+    padding: 2px 5px;
+  }
+  
+  .tjh-art-sect p {
+    line-height: 1.9;
+    letter-spacing: 0.4px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #tjh-top-scroll br{
+    display: none;
+  }
+  
+  #tjh-top-scroll {
+    padding: 10px 5px;
+    position: fixed;
+    right: 30%;
+    bottom: 0;
+	transform: translate(30%,0);
+    width: 100px;
+    display: none;
+    font-size: 13px;
+    text-align: center;
+    cursor: pointer;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+	border-bottom-left-radius: 0;
+    z-index: 10;
+    background-color: #000817;
+    color: #00ffcc;
+	text-transform: capitalize;
+  }
+
+  #tjh-top-scroll span {
+    font-size: 13px;
+    margin: 0 4px 0;
+    padding: 0;
+  }
+  
+  #tjh-top-scroll b {
+    text-transform: capitalize;
+	font-weight: normal;
+  }
+  
+  .foot-col a {
+    padding: 7px 5px;
+    font-size: 10px;
+    margin: 0 2px;
+    letter-spacing: 0.2px;
+  }
+
+  .foot-col h5 {
+    padding: 5px;
+    margin: 0;
+    letter-spacing: 0.2px;
+    font-size: 12px;
+  }
+
+  .tjh-code-view {
+    height: 230px;
+    width: 195px;
+  }
+   
+  .tjh-prev-dmo, .tjh-prev-dmo iframe {
+    height: 230px;
+    width: 195px;
+  }
+  
+  .tjh-prev-cde h5, .tjh-prev-dmo h5 {
+    width: 195px;
   }  
 }
