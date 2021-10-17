@@ -5,7 +5,7 @@ var details1 = "Explaining the concept of using <b>Display</b> properties to imp
 var linktags1 = htmlTag + ", " + cssTag + ", " + navTag;
 var defaultimage = "<img src='media/images/default/tjhcomp_preview.png'>";
 
-var link1 = "creating_inline_bar_nav.html";
+var link1 = "/programming/blog/creating_inline_bar_nav.html";
 
 document.getElementById("update-title-1").innerHTML = "<a href='" + link1 + "'>" + title1 + "</a>";
 document.getElementById("update-date-1").innerHTML = "<a href='" + link1 + "'>" + date1 + " (updated)</a>";
