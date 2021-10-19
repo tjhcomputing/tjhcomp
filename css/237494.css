@@ -153,45 +153,6 @@
     font-size: 12px;
   }
 
-  .tjh-update-sector {
-    height: 130px;
-    width: 70%;
-    margin: 10px auto 20px;
-    box-shadow: 0 8px 13px rgba(0,8,23,0.3);
-  }
-
-  .update-head a {
-    padding: 10px 5px 5px;
-  }
-
-  .update-date a {
-    padding: 2px 5px 0;
-    margin-right: 100px;
-    font-size: 13px;
-  }
-
-  .update-info a {
-    padding: 2px 5px;
-    margin-right: 100px;
-    top: 61px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    font-size: 12px;
-  }
-
-  .update-img {
-    width: 100px;
-    height: 100px;
-    right: 0;
-    top: 33px;
-  }
-   
-  .update-img img {
-    max-width: 100px;
-    width: 100%;    
-  }
-
   .tjh-img-sqa, .tjh-img-por, .tjh-img-lan,
   .tjh-img-cap-sqa, .tjh-img-cap-por, 
   .tjh-img-cap-lan {
@@ -356,5 +317,7 @@
   
   .tjh-prev-cde h5, .tjh-prev-dmo h5 {
     width: 195px;
-  }  
+  }
+
+  
 }
