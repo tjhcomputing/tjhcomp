@@ -6,7 +6,7 @@ var linktags1 = htmlTag + ", " + cssTag + ", " + navTag;
 var image1 = "<img src='media/images/previews/tjh_nav_display_160x160.png'>";
 var defaultimage = "<img src='media/images/default/tjhcomp_preview.png'>";
 
-var link1 = "creating_inline_bar_nav.html";
+var link1 = "/programming/blog/create_bar_navigation_using_display.html";
 
 document.getElementById("update-title-1").innerHTML = "<a href='" + link1 + "'>" + title1 + "</a>";
 document.getElementById("update-date-1").innerHTML = "<a href='" + link1 + "'>" + date1 + "</a>";
