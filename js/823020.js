@@ -6,7 +6,7 @@ var title1 = "Create A Bar Navigation With Inline Display";
 var date1 = month[9] + " " + day[14] + " " + year[5];
 var details1 = "Explaining the concept of using <b>Display</b> properties to improve responsive techniques.";
 var linktags1 = htmlTag + ", " + cssTag + ", " + navTag;
-var image1 = "<img src='/media/images/previews/tjhnavdisplay.png' alt='Display Nav Preview'>";
+var image1 = "<img src='/media/images/previews/tjhnavdisplay.PNG' alt='Display Nav Preview'>";
 
 var link1 = "/programming/blog/create_bar_navigation_using_display.html";
 
