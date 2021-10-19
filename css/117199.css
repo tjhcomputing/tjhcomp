@@ -1,85 +1,107 @@
 /* --- UPDATE PAGES --- */
 
 .update-container {
-  height: 160px;
-  margin: 20px 10%;
-  border: 2px solid #000817;
+  height: 200px;
+  margin: 20px 65px;
+  border: 2px solid #f2f2f2;
   border-radius: 4px;
-  box-shadow: 0 8px 12px rgba(0,8,23,0.4);
+  box-shadow: 0 8px 12px rgba(0,8,23,0.2);
   overflow: hidden;
   position: relative;
+  /*background-color: red;*/
   text-align: left;
-}
-
-.update-info {
-  background-color: #ffffff;
-  color: #000817;
-  height: 130px;
-  position: absolute;
-  top: 30px;
-  left: 0;
-  right: 160px;
-}
-
-.update-image {
-  background-color: #ffffff;
-  height: 130px;
-  width: 160px;
-  position: absolute;
-  top: 30px;
-  right: 0;
-  overflow: hidden;
 }
 
 .update-title {
   background-color: #000817;
   color: #00ffcc;
-  height: 25px;
   width: 100%;
   overflow: hidden;
   top: 0;
   left: 0;
   right: 0;
-  padding: 3px 10px 3px;
-  font-weight: bold;
-  font-size: 14px;
+  padding: 10px;
+  font-size: 17px;
+  letter-spacing: 0.3px;
+  max-height: 20px;
+  line-height: 1.6;
+  position: relative;
 }
 
-.update-date, .update-details, .update-tags {
-  overflow: hidden;
-}
-
-.update-date, .update-tags {
-  height: 20px;
-}
-
-.update-date {
-  font-size: 14px;
-  padding: 2px 5px 0;
-}
-
-.update-details {
-  height: 90px;
-  font-size: 15px;
-  letter-spacing: 0.4px;
-  line-height: 1.4;
-  padding: 0 5px 0 10px;
-}
-
-.update-tags {
-  font-size: 13px;
-  padding: 1px 5px 0;
+.update-info {
+  /*background-color: blue;*/
+  margin-right: 160px;
+  height: 160px;
+  color: #000817;
 }
 
 .update-image {
-  height: 130px;
+  /*background-color: lime;*/
+  background-color: #000817;
   width: 160px;
+  height: 160px;
   position: absolute;
-  top: 30px;
+  top: 40px;
   right: 0;
+  box-shadow: 0 8px 20px rgba(0,8,23,0.1);
 }
 
+.update-image img {
+  width: 160px;
+  height: 160px;
+}
 
+.update-date {
+  /*background-color: orange;*/
+  padding: 5px 10px;
+  font-size: 13px;
+  overflow: hidden;
+}
+
+.update-details {
+  /*background-color: crimson;*/
+  height: 90px;
+  overflow: hidden;
+  font-size: 14.5px;
+  letter-spacing: 0.3px;
+  padding: 11px 5px 11px 10px;
+  position: relative;
+  line-height: 1.4;
+}
+
+.update-tags {
+  /*background-color: purple;*/
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.update-title a {
+  color: #00ffcc;
+  text-decoration: none;
+}
+
+.update-date a, .update-details a {
+  text-decoration: none;
+  color: #000817;
+}
+
+.update-tags a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #000817;
+}
+
+.update-title a:hover, 
+.update-date a:hover, 
+.update-details a:hover,
+.update-tags a:hover {
+  text-decoration: underline;
+}
+
+.update-tags a:hover {
+  color: #00ffcc;
+  text-shadow: 0 2px 2px rgba(0,8,23,0.3);
+}
 
 
 /* ====== */
@@ -112,7 +134,21 @@
 .tjh-doc-sect h2, .tjh-doc-sect h3,
 .tjh-doc-sect h4, .tjh-doc-sect p {
   text-align: left;
+  margin: 0;
 }
+
+.tjh-doc-sect h2 {
+  padding: 10px 10px 5px 20px;
+}
+
+.tjh-doc-sect h3 {
+  padding: 4px 10px 4px 30px;
+}
+
+.tjh-doc-sect h4, .tjh-doc-sect p {
+  padding: 4px 10px 4px 40px;
+}
+
 
 /* --- Hyper links --- */
 
@@ -146,10 +182,4 @@
 .update-tags a:hover {
   color: #00ffcc;
   text-decoration: underline;
-}
-
-.update-image img{
-  width: 100%;
-  max-width: 130px;
-  float: right;
 }
