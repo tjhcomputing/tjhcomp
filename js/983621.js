@@ -49,7 +49,7 @@ function scrollToTop() {
 
 window.onscroll = function() { positionScroll(); displayScrollTop()};
 
-document.getElementById("prim-nav-1").innerHTML = "<a href='tjhcomp.co.uk/index.html' class='current'>Home</a>";
+document.getElementById("prim-nav-1").innerHTML = "<a href='index.html' class='current'>Home</a>";
 document.getElementById("prim-nav-2").innerHTML = "<a href='tjhcomp.co.uk/computing.html'>Computing</a>";
 document.getElementById("prim-nav-3").innerHTML = "<a href='tjhcomp.co.uk/networking.html'>Networking</a>";
 document.getElementById("prim-nav-4").innerHTML = "<a href='tjhcomp.co.uk/programming.html'>Programming</a>";
