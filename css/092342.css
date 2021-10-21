@@ -925,6 +925,7 @@ input:-ms-input-placeholder {
    height: 300px;
    width: 200px;
    float: left;
+   position: relative;
 }
 
 .code-sample code,
@@ -1073,6 +1074,7 @@ p code {
   position: absolute;
   top: 90px;
   width: 100%;
+  display: none;
 }
 
 .tjh-disp-info {
@@ -1101,4 +1103,63 @@ p code {
 .tjh-disp-info:hover .tjh-disp-txt {
   visibility: visible;
   opacity: 0.9;
+}
+
+
+#copy-code {
+  background-color: #00ffcc;
+  color: #000817;
+  padding: 5px;
+  position: absolute;
+  top: 48px;
+  right: 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#copy-code:hover {
+  background: none;
+  color: #00ffcc;
+}
+
+
+
+
+
+#down-container{
+  background-color: #000817;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 210px;
+  right: 210px;
+  border-right: 2px solid #000;
+  border-right: 2px solid #000;
+  box-shadow: 0 0 30px rgba(0,0,0,0.8);
+}
+
+#down-content{
+	text-align: center;
+	margin: 10% auto 0;
+}
+
+#down-content img{
+	width: 100%;
+	max-width: 500px;
+}
+
+#down-content .dwn-list{
+	text-align: left;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+#down-content p, #down-content h2{
+	color: #99add6;
+	padding: 2px;
+}
+
+#down-content .dwn-icon {
+	color: #00ffcc;
+	padding: 0 10px;
 }
