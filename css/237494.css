@@ -68,6 +68,17 @@
     display: block;
   }*/
   
+  #down-container{
+    left: 0;
+    right: 0;
+    border-right: none;
+    border-right: none;
+  }
+
+  #down-content img{
+	max-width: 400px;
+  }
+	
 }
 
 @media only screen and (max-width: 620px) {
