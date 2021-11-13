@@ -1,14 +1,16 @@
+// Programming Page Updates
 // Global Sectors
-var defaultimage = "<img src='/media/images/default/tjhcomp_preview.png'>";
+var defaultimage = "<img src='media/images/default/tjhcomp_preview.png'>";
 
 // Update sector 1
 var title1 = "Create A Bar Navigation With Inline Display";
 var date1 = month[9] + " " + day[14] + " " + year[5];
-var details1 = "Explaining the concept of using <b>Display</b> properties to improve responsive techniques.";
+var details1 = "Blog/Programming/98232";
 var linktags1 = htmlTag + ", " + cssTag + ", " + navTag;
-var image1 = "<img src='/media/images/previews/tjhnavdisplay.png'>";
+var image1 = "<img src='media/images/previews/tjh_inline_display_nav_160x160.png'>";
+var defaultimage = "<img src='media/images/default/tjhcomp_preview.png'>";
 
-var link1 = "/programming/blog/create_bar_navigation_using_display.html";
+var link1 = "creating_inline_bar_nav.html";
 
 document.getElementById("update-title-1").innerHTML = "<a href='" + link1 + "'>" + title1 + "</a>";
 document.getElementById("update-date-1").innerHTML = "<a href='" + link1 + "'>" + date1 + "</a>";
@@ -17,24 +19,24 @@ document.getElementById("update-tags-1").innerHTML = "<a href='" + link1 + "'>" 
 document.getElementById("update-image-1").innerHTML = "<a href='" + link1 + "'>" + image1 + "</a>";
 
 // Update sector 2
-var title2 = "Coming Soon";
-var date2 = "";
-var details2 = "Coming Soon";
-var linktags2 = "";
-//var image2 = "";
+var title2 = "Understanding Frontend Development";
+var date2 = month[9] + " " + day[14] + " " + year[5];
+var details2 = "Guide/Programming/91123";
+var linktags2 = htmlTag + ", " + cssTag + ", " + navTag;
+var image2 = "<img src='media/images/previews/tjh_front_end_dev_160x160.png'>";
 
-var link2 = "";
+var link2 = "creating_inline_bar_nav.html";
 
 document.getElementById("update-title-2").innerHTML = "<a href='" + link2 + "'>" + title2 + "</a>";
 document.getElementById("update-date-2").innerHTML = "<a href='" + link2 + "'>" + date2 + "</a>";
 document.getElementById("update-details-2").innerHTML = "<a href='" + link2 + "'>" + details2 + "</a>";
 document.getElementById("update-tags-2").innerHTML = "<a href='" + link2 + "'>" + linktags2 + "</a>";
-document.getElementById("update-image-2").innerHTML = "<a href='" + link2 + "'>" + defaultimage + "</a>";
+document.getElementById("update-image-2").innerHTML = "<a href='" + link2 + "'>" + image2 + "</a>";
 
 // Update sector 3
-var title3 = "Coming Soon";
+var title3 = "Differences Between JavaScript and jQuery";
 var date3 = "";
-var details3 = "Coming Soon";
+var details3 = "Blog/Programming/84211";
 var linktags3 = "";
 //var image3 = "";
 
@@ -47,9 +49,9 @@ document.getElementById("update-tags-3").innerHTML = "<a href='" + link3 + "'>" 
 document.getElementById("update-image-3").innerHTML = "<a href='" + link3 + "'>" + defaultimage + "</a>";
 
 // Update sector 4
-var title4 = "Coming Soon";
+var title4 = "Configuring Front-End and Back-End Services Using LAMP";
 var date4 = "";
-var details4 = "Coming Soon";
+var details4 = "Blog/Programming/88302";
 var linktags4 = "";
 //var image4 = "";
 
@@ -62,9 +64,9 @@ document.getElementById("update-tags-4").innerHTML = "<a href='" + link4 + "'>" 
 document.getElementById("update-image-4").innerHTML = "<a href='" + link4 + "'>" + defaultimage + "</a>";
 
 // Update sector 5
-var title5 = "Coming Soon";
+var title5 = "Testing and Validating Web Content";
 var date5 = "";
-var details5 = "Coming Soon";
+var details5 = "Blog/Programming/72031";
 var linktags5 = "";
 //var image5 = "";
 
