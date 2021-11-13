@@ -142,13 +142,13 @@ input:hover::placeholder {
 .tjh-cont-top a:hover {
   color: #00ffcc;
 }
-
+/*
 #tjh-ad-box {
   background-color: #000817;
   border-left: 1px solid #0d1423;
   color: #99add6;
 }
-
+*/
 #article {
   color: #000817;
   background-color: #f2f3f3;
@@ -436,17 +436,17 @@ input:hover::placeholder {
 .tjh-quot-cont hr {
 	border: 1px solid white;
 }
-
+/*
 .tjh-code-dmo {
   background-color: #0d1423;
   color: #00ffcc;
 }
-
+*/
 p code {
   background-color: #19202e;
   color: #00ffcc;
 }
-
+/*
 .tjh-code-dmo code::selection {
   background-color: #00ffcc;
   color: #000817;
@@ -506,7 +506,7 @@ p code {
 .tjh-prev-dmo::selection, .tjh-prev-dmo iframe::selection {
   background: none;
 }
-
+*/
 #tjh-warn-disp {
   /* high level warning 
   color: #fff;
