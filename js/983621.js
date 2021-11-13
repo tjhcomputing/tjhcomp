@@ -24,12 +24,12 @@ function positionScroll() {
   } else {
     document.getElementById("tjh-head-sector").style.paddingBottom = 0;
     document.getElementById("tjh-cont-menu").style.position = "absolute";
-    //document.getElementById("tjh-cont-menu").style.top = "90px";
-	document.getElementById("tjh-cont-menu").style.top = "125px";
+    document.getElementById("tjh-cont-menu").style.top = "90px";
+	//document.getElementById("tjh-cont-menu").style.top = "125px";
     document.getElementById("tjh-cont-menu").style.bottom = "-50px";
     document.getElementById("tjh-ad-box").style.position = "absolute";
-    //document.getElementById("tjh-ad-box").style.top = "90px";
-	document.getElementById("tjh-ad-box").style.top = "125px";
+    document.getElementById("tjh-ad-box").style.top = "90px";
+	//document.getElementById("tjh-ad-box").style.top = "125px";
     document.getElementById("tjh-ad-box").style.bottom = "-50px";
   }
 }
@@ -49,23 +49,23 @@ function scrollToTop() {
 
 window.onscroll = function() { positionScroll(); displayScrollTop()};
 
-document.getElementById("prim-nav-1").innerHTML = "<a href='/index.html' class='current'>Home</a>";
-document.getElementById("prim-nav-2").innerHTML = "<a href='/computing.html'>Computing</a>";
-document.getElementById("prim-nav-3").innerHTML = "<a href='/networking.html'>Networking</a>";
-document.getElementById("prim-nav-4").innerHTML = "<a href='/programming.html'>Programming</a>";
-document.getElementById("prim-nav-5").innerHTML = "<a href='/cybersecurity.html'>Security</a>";
-document.getElementById("mob-nav-1").innerHTML = "<a href='/index.html' class='current'>Home</a>";
-document.getElementById("mob-nav-2").innerHTML = "<a href='/computing.html'>Computing</a>";
-document.getElementById("mob-nav-3").innerHTML = "<a href='/networking.html'>Networking</a>";
-document.getElementById("mob-nav-4").innerHTML = "<a href='/programming.html'>Programming</a>";
-document.getElementById("mob-nav-5").innerHTML = "<a href='/cybersecurity.html'>Security</a>";
-document.getElementById("foot-nav-1").innerHTML = "<a href='/computing.html'>Computing</a>";
-document.getElementById("foot-nav-2").innerHTML = "<a href='/networking.html'>Networking</a>";
-document.getElementById("foot-nav-3").innerHTML = "<a href='/programming.html'>Programming</a>";
-document.getElementById("foot-nav-4").innerHTML = "<a href='/cybersecurity.html'>Security</a>";
-document.getElementById("foot-nav-5").innerHTML = "<a href='/privacy.html'>Privacy</a>";
-document.getElementById("foot-nav-6").innerHTML = "<a href='/guidelines.html'>Guidelines</a>";
-//document.getElementById("foot-nav-7").innerHTML = "<a href='#'>Link</a>";
+document.getElementById("prim-nav-1").innerHTML = "<a href='index.html' class='current'>Home</a>";
+document.getElementById("prim-nav-2").innerHTML = "<a href='computing.html'>Computing</a>";
+document.getElementById("prim-nav-3").innerHTML = "<a href='networking.html'>Networking</a>";
+document.getElementById("prim-nav-4").innerHTML = "<a href='programming.html'>Programming</a>";
+document.getElementById("prim-nav-5").innerHTML = "<a href='cybersecurity.html'>Security</a>";
+document.getElementById("mob-nav-1").innerHTML = "<a href='index.html' class='current'>Home</a>";
+document.getElementById("mob-nav-2").innerHTML = "<a href='computing.html'>Computing</a>";
+document.getElementById("mob-nav-3").innerHTML = "<a href='networking.html'>Networking</a>";
+document.getElementById("mob-nav-4").innerHTML = "<a href='programming.html'>Programming</a>";
+document.getElementById("mob-nav-5").innerHTML = "<a href='security.html'>Security</a>";
+document.getElementById("foot-nav-1").innerHTML = "<a href='computing.html'>Computing</a>";
+document.getElementById("foot-nav-2").innerHTML = "<a href='networking.html'>Networking</a>";
+document.getElementById("foot-nav-3").innerHTML = "<a href='programming.html'>Programming</a>";
+document.getElementById("foot-nav-4").innerHTML = "<a href='cybersecurity.html'>Security</a>";
+document.getElementById("foot-nav-5").innerHTML = "<a href='privacy.html'>Privacy</a>";
+document.getElementById("foot-nav-6").innerHTML = "<a href='guidelines.html'>Guidelines</a>";
+document.getElementById("foot-nav-7").innerHTML = "<a href='about.html'>About</a>";
 //document.getElementById("foot-nav-8").innerHTML = "<a href='#'>Link</a>";
 //document.getElementById("foot-nav-9").innerHTML = "<a href='https://www.facebook.com/tjh.comp' target='_blank' class='fa fa-facebook-square'></a>";
 document.getElementById("foot-nav-10").innerHTML = "<a href='https://www.instagram.com/tjhcomputing/' target='_blank' class='fa fa-instagram'></a>";
@@ -90,17 +90,17 @@ const day = ["1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10t
 const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const year = ["2016", "2017", "2018", "2019", "2020", "2021"];
 
-const tags = ["computing", "networking", "programming", "security", "css", "html", "navigation", "frontend", "web"];
+const tag = ["computing", "networking", "programming", "security", "css", "html", "navigation", "frontend", "web"];
 
-let compTag = "<a href='" + tags[0] + ".html'>" + tags[0] + "</a>";
-let netTag = "<a href='" + tags[1] + ".html'>" + tags[1] + "</a>";
-let programTag = "<a href='" + tags[2] + ".html'>" + tags[2] + "</a>";
-let secTag = "<a href='" + tags[3] + ".html'>" + tags[3] + "</a>";
-let cssTag = "<a href='" + tags[4] + ".html'>" + tags[4] + "</a>";
-let htmlTag = "<a href='" + tags[5] + ".html'>" + tags[5] + "</a>";
-let navTag = "<a href='" + tags[6] + ".html'>" + tags[6] + "</a>";
-let frontendTag = "<a href='" + tags[7] + ".html'>" + tags[7] + "</a>";
-let webTag = "<a href='" + tags[8] + ".html'>" + tags[8] + "</a>";
+let compTag = "<a href='tags/" + tag[0] + ".html'>" + tag[0] + "</a>";
+let netTag = "<a href='tags/" + tag[1] + ".html'>" + tag[1] + "</a>";
+let programTag = "<a href='tags/" + tag[2] + ".html'>" + tag[2] + "</a>";
+let secTag = "<a href='tags/" + tag[3] + ".html'>" + tag[3] + "</a>";
+let cssTag = "<a href='tags/" + tag[4] + ".html'>" + tag[4] + "</a>";
+let htmlTag = "<a href='tags/" + tag[5] + ".html'>" + tag[5] + "</a>";
+let navTag = "<a href='tags/" + tag[6] + ".html'>" + tag[6] + "</a>";
+let frontendTag = "<a href='tags/" + tag[7] + ".html'>" + tag[7] + "</a>";
+let webTag = "<a href='tags/" + tag[8] + ".html'>" + tag[8] + "</a>";
 
 const readNum = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"];
 
@@ -162,3 +162,22 @@ function currentCodeTab(currentCodeSector, codeSector) {
    document.getElementById(codeSector).style.display = "block";
    currentCodeSector.currentTarget.className += " active";
 }
+
+var message = "<p>By using this site you agree to the use of cookies to make browsing experience better.</p>";
+var agree = "<p><a href='#' class='agreeBtn'>I agree</a></p>";
+var info = "<p><a href='#' class='readBtn'>Read Here</a> on cookie and privacy information.</p>";
+
+document.getElementById("tjh-info").innerHTML = message + agree + info;
+
+if(localStorage.getItem('cookie_accept') != 'true'){
+  $(".tjh-cookie-message").delay(2000).fadeIn();
+  // set the cookie for 24 hours
+  var date = new Date();
+  date.setTime(date.getTime() + 24 * 60 * 60 * 1000);
+  localStorage.removeItem('cookie_accept','true');
+}
+
+$('.agreeBtn').click(function() {
+  $('.tjh-cookie-message').fadeOut(); 
+  localStorage.setItem('cookie_accept','true')
+});
