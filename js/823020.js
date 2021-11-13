@@ -1,14 +1,13 @@
-// Global Images
-var defaultimage = "<img src='/media/images/default/tjhcomp_preview.png' alt='TJH Default Image'>";
-
+// Home Page Updates
 // Update sector 1
 var title1 = "Create A Bar Navigation With Inline Display";
 var date1 = month[9] + " " + day[14] + " " + year[5];
 var details1 = "Explaining the concept of using <b>Display</b> properties to improve responsive techniques.";
 var linktags1 = htmlTag + ", " + cssTag + ", " + navTag;
-var image1 = "<img src='/media/images/previews/tjhnavdisplay.PNG' alt='Display Nav Preview'>";
+var image1 = "<img src='media/images/previews/tjh_nav_display_160x160.png'>";
+var defaultimage = "<img src='media/images/default/tjhcomp_preview.png'>";
 
-var link1 = "/programming/blog/create_bar_navigation_using_display.html";
+var link1 = "creating_inline_bar_nav.html";
 
 document.getElementById("update-title-1").innerHTML = "<a href='" + link1 + "'>" + title1 + "</a>";
 document.getElementById("update-date-1").innerHTML = "<a href='" + link1 + "'>" + date1 + "</a>";
