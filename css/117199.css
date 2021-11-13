@@ -1,5 +1,4 @@
 /* --- UPDATE PAGES --- */
-
 .update-container {
   height: 200px;
   margin: 20px 65px;
@@ -8,7 +7,6 @@
   box-shadow: 0 8px 12px rgba(0,8,23,0.2);
   overflow: hidden;
   position: relative;
-  /*background-color: red;*/
   text-align: left;
 }
 
@@ -29,14 +27,12 @@
 }
 
 .update-info {
-  /*background-color: blue;*/
   margin-right: 160px;
   height: 160px;
   color: #000817;
 }
 
 .update-image {
-  /*background-color: lime;*/
   background-color: #000817;
   width: 160px;
   height: 160px;
@@ -52,14 +48,12 @@
 }
 
 .update-date {
-  /*background-color: orange;*/
   padding: 5px 10px;
   font-size: 13px;
   overflow: hidden;
 }
 
 .update-details {
-  /*background-color: crimson;*/
   height: 90px;
   overflow: hidden;
   font-size: 14.5px;
@@ -70,7 +64,6 @@
 }
 
 .update-tags {
-  /*background-color: purple;*/
   padding: 5px 10px;
   font-size: 12px;
 }
