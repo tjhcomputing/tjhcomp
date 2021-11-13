@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/png" href="media/assets/icons/tjhcomp_favicon.png"/>
+
+<title>TJHComp | Formatting on Excel</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<link rel="stylesheet" type="text/css" href="css/092342.css"/> <!-- CSS Design (Global) -->
+<link rel="stylesheet" type="text/css" href="css/237494.css"/> <!-- CSS View Design (Mobile) -->
+<link rel="stylesheet" type="text/css" href="css/222375.css"/> <!-- CSS Color Scheme (Global) -->
+<link rel="stylesheet" type="text/css" href="css/117199.css"/> <!-- CSS Design (Update Pages) -->
+<link rel="stylesheet" type="text/css" href="css/119200.css"/> <!-- CSS Design (Update Pages - Mobile Version) -->
+
+</head>
+<body>
+
+<div id="wrapper">
+  <div id="tjh-head-sector" class="tjh-border-bg">
+    <div id="tjh-head-base">
+      <div onclick="openMobDrawer()" id="tjh-mob-drawer">
+      <span class="fa fa-bars"></span>
+        <div id="mobMenu"  class="tjh-mob-menu tjh-border-bg">
+		  <div class="mob-nav-menu">
+            <div id="mob-nav-1"></div>
+		    <div id="mob-nav-2"></div>
+		    <div id="mob-nav-3"></div>
+		    <div id="mob-nav-4"></div>
+		    <div id="mob-nav-5"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="tjh-logo-sector">
+        <a href="index.html">
+          <img src="media/images/logo/tjhcomp_logo.png" alt="TJH Logo">
+        </a>
+      </div>
+
+      <div id="tjh-primary-nav" class="tjh-primary-nav">
+          <div id="prim-nav-1"></div>
+		  <div id="prim-nav-2" class="current"></div>
+		  <div id="prim-nav-3"></div>
+		  <div id="prim-nav-4"></div>
+		  <div id="prim-nav-5"></div>
+      </div>
+	  <input id="tjh-srch" type="text" name="search" placeholder="Search" autocomplete="off">
+    </div>
+  </div>
+
+  <div id="tjh-sec-menu" style="height: 30px;">
+  </div>
+
+  <div id="tjh-warn-disp"></div>
+  <div id="tjh-cont-menu">
+    <div class="tjh-cont-main">
+      <a href="#intro">Dealing with Formulas and Formatting On Excel</a>
+    </div>
+    <div class="tjh-cont-main">
+      <a href="#formatting">Formatting Our Spreadsheet</a>
+    </div>
+    <div class="tjh-cont-main">
+      <a href="#formulas">Calculating Orders and Costs</a>
+    </div>
+  </div>
+
+  <div id="tjh-ad-box"></div>
+
+  <div id="article">
+    <div style="display: none;"></div>
+    <div class="tjh-art-bod" id="tjh-art-bod">
+      <div class="tjh-art-sect">
+        <div class="tjh-art-head">
+          <div class="tjh-site-dir">
+            <span class="tjh-rw"><span class="fa fa-folder tjh-dir-con"></span><span class="name">Home</span></span>
+			<span class="tjh-rw"><span class="fa fa-chevron-right tjh-dir-con"></span><span class="name">Computing</span></span>
+          </div>
+
+          <h1 id="topic-title">Formatting on Excel</h1>
+          <div class="tjh-rw info">
+		    <div id="tjh-art-head-info">
+			   <span class="tjh-rw"><span class="fa fa-user tjh-art-icon"></span> <span id="demo2"></span></span>
+               <span class="tjh-rw"><span class="fa fa-calendar tjh-art-icon"></span> <span id="demo"></span></span>
+			   <!--<span class="tjh-rw"><span class="fa fa-clock-o tjh-art-icon"></span> <span id="demo4"></span></span>-->
+			</div>
+          </div>
+        </div>
+		
+        <div class="tjh-art-shr"></div>
+
+        <h2 id="intro">Dealing with Formulas and Formatting On Excel</h2>
+        <p>In this article, will show you how to format your orders and calculate them apart. Let's consider we would have two orders and we want to make them look better by formating them and adjusting them.</p>
+		<p>Will be instructing you how to format your cells appropriately for the values representation and how we will combine those together to update our orders.</p>
+		
+		<p>This will be our default spreadsheet:</p>
+		
+        <div class="tjh-rw">
+          <div class="tjh-img-cont">
+            <div class="tjh-img tjh-img-lan">
+            <img src="media/images/temp/Default1.png" alt="Default Spreadsheet Structure" onclick="zoomIn();activeImg(1)"/>
+            </div>
+            <div class="tjh-img-cap tjh-img-cap-lan">
+              <span>Default structure of the spreadsheet.</span>
+            </div>
+          </div>
+        </div>
+		
+		<h4>The Structure: </h4>
+		
+        <div class="tjh-rw">
+          <div class="tjh-cont">
+            <div class="tjh-cont-head">
+              <h5>The Sheets</h5>
+            </div>
+            <div class="tjh-cont-lst" style="font-size: 13px;">
+              <ul>
+                <li><span>Order1 as orders from sheet 1</span></li>
+                <li><span>Order2 as orders from sheet 2</span></li>
+				<li><span>OrderUpdate as combined orders from both sheets</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p><b>Order1</b> would feature 3 items ordered another order placed would feature an additonal of 2 items ordered for <b>Order2</b>. The combined orders will be added together inside <b>OrderUpdate</b> of all items ordered.</p>
+
+        <h2 id="formatting">Formatting Our Spreadsheet</h2>
+
+        <p>We will turn this format into a format we want to see our data being represented with. Basically well only worry about our currency values which are the <b>costs</b> calls.</p>
+
+        <p>By general Excel uses the current format as "General" which means anything can be used in the cell just means you can manually enter what you want.</p>
+		<p>If want your cells to be currency, you can enter <b>£</b> followed by a number but this is alot of hassle. You'll want to change your cell format to "Currency" that are supposed to be your currency cells by default.</p>
+
+        <div class="tjh-rw">
+          <div class="tjh-img-cont">
+            <div class="tjh-img tjh-img-lan">
+            <img src="media/images/temp/FormatCurrency.png" alt="Formatting to Currency" onclick="zoomIn();activeImg(2)"/>
+            </div>
+            <div class="tjh-img-cap tjh-img-cap-lan">
+              <span>Formatting the spreadsheet to currency format.</span>
+            </div>
+          </div>
+        </div>
+
+        <p>In the example below will show you how to change your cell format to Currency-based format.</p>
+
+        <div class="tjh-rw">
+          <div class="tjh-cont">
+            <div class="tjh-cont-head">
+              <h5>The Sheets</h5>
+            </div>
+            <div class="tjh-cont-lst" style="font-size: 13px;">
+              <ol>
+                <li><span>Select your first cell Example "B3"</span></li>
+                <li><span>Drag to last cell Example "B6"</span></li>
+				<li><span>Right click and select "Format Cells"</span></li>
+				<li><span>You'll see the current format is "General"</span></li>
+				<li><span>On the list select "Currency"</span></li>
+				<li><span>Choose the decimal you require by default it's "2"</span></li>
+				<li><span>If you want to remove it, enter "0" as the value</span></li>
+				<li><span>By default you'll see the symbol as "£"</span></li>
+				<li><span>Click "OK" with your preferred settings</span></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <p>You should see the example picture as currency values.</p>
+
+        <div class="tjh-rw">
+          <div class="tjh-img-cont">
+            <div class="tjh-img tjh-img-lan">
+            <img src="media/images/temp/currencyformat.png" alt="Currency Format" onclick="zoomIn();activeImg(3)"/>
+            </div>
+            <div class="tjh-img-cap tjh-img-cap-lan">
+              <span>The spreadsheet is updated as currency format.</span>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="formulas">Calculating Orders and Costs</h2>
+        <p>Anything can be possible for Excel, you can work with different sheets to perform tasks you require done with your tables. Individual sheets seperates your work into chunks.</p>
+		<p>Especially when it comes to shopping or producing orders, different sheets can be referred to having daily, monthly and annual concepts.</p>
+		<p>For example one sheet could be January Orders another can be Feburary Orders you wouldn't want orders of every month! so you could have a count of orders from each specific month.</p>
+        <p>Sometimes it can complicated to structure the formula of your totals depending on whether its the same row or different rows.</p>
+
+        <p>In this example will show you two orders "Order1" and "Order2" sheets and a total sheet for counting my order of items and costs inside "OrderUpdate" from different sheets.</p>
+
+        <h3>Two ways to make this less complicated based on the formulas:</h3>
+		<h4>Same Row Formula Concept:</h4>
+        <p>My Order1 sheet would have Totals in Cell D6, my Order2 sheet would have Totals in D6 also so this just means they are in the same row! Easy! I can just use the formula as =SUM(Sheet:Sheet!CellReference).</p>
+		
+		<p>The formula you'd use would be <i>=SUM(Order1:Order2!D6)</i> as shown below.</p>
+		
+        <div class="tjh-rw">
+          <div class="tjh-img-cont">
+            <div class="tjh-img tjh-img-lan">
+            <img src="media/images/temp/samerowcal.png" alt="Same Row Calculation" onclick="zoomIn();activeImg(4)"/>
+            </div>
+            <div class="tjh-img-cap tjh-img-cap-lan">
+              <span>Same row calculation.</span>
+            </div>
+          </div>
+        </div>
+
+        <h4>Different Row Formula Concept:</h4>
+        <p>If my Order1 sheet would have item totals in cell <b>C6</b> and my Order2 sheet has item totals in the cell <b>C6</b> they are in different rows. I'd have to use a seperator <b>,</b> in the formula which would be <b>=SUM(Sheet!CellReference,Sheet!CellReference)</b>.</p>
+		
+		<p>The formula you'd use would be <i>=SUM(Order1!D6,Order2!D5)</i> as shown below.</p>
+		
+        <div class="tjh-rw">
+          <div class="tjh-img-cont">
+            <div class="tjh-img tjh-img-lan">
+            <img src="media/images/temp/diffrowcal.png" alt="Different Row Calculation" onclick="zoomIn();activeImg(5)"/>
+            </div>
+            <div class="tjh-img-cap tjh-img-cap-lan">
+              <span>Different row calculation.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+	  
+      <div class="tjh-border-bg" id="tjh-foot-sector">
+        <div id="tjh-foot-base">
+
+          <div class="tjh-rw">
+            <div id="foot-info-sector"></div>
+          </div>
+
+          <div class="tjh-rw foot-menu-sector">
+
+            <div class="foot-col borderless">
+              <div id="foot-site-head"></div>
+              <div id="foot-nav-1"></div>
+              <div id="foot-nav-2"></div>
+              <div id="foot-nav-3"></div>
+              <div id="foot-nav-4"></div>
+            </div>
+
+            <div class="foot-col">
+              <div id="foot-info-head"></div>
+              <div id="foot-nav-5"></div>
+              <div id="foot-nav-6"></div>
+              <div id="foot-nav-7"></div>
+              <div id="foot-nav-8"></div>
+            </div>
+
+            <div class="foot-col socials">
+              <div id="foot-social-head"></div>
+              <div id="foot-nav-9"></div>
+              <div id="foot-nav-10"></div>
+              <div id="foot-nav-11"></div>
+              <div id="foot-nav-12"></div>
+             </div>
+          </div>
+
+          <div class="tjh-rw" style="color: #73777f;">
+			<div id="foot-logo-name"></div>
+          </div>
+
+          <div class="tjh-rw">
+            <a href="index.html">
+              <img src="media/images/logo/tjhcomp_logo.png" alt="TJH Logo">
+            </a>
+          </div>
+        </div>
+      </div>
+	  
+	  <div id="tjh-img-modal" class="tjh-img-mod" onclick="zoomOut()">
+  <span class="tjh-zm-out-btn" onclick="zoomOut()">&times;</span>
+  <div class="tjh-img-mod-cont">
+    <div class="tjh-img-act tjh-mod-lan">
+      <img src="media/images/temp/Default1.png" alt="Default Spreadsheet Structure"/>
+      <div class="tjh-mod-cap tjh-mod-lan">Default structure of the spreadsheet.</div>
+    </div>
+  </div>
+  <div class="tjh-img-mod-cont">
+    <div class="tjh-img-act tjh-mod-lan">
+      <img src="media/images/temp/FormatCurrency.png" alt="Formatting to Currency"/>
+      <div class="tjh-mod-cap tjh-mod-lan">Formatting the spreadsheet to currency format.</div>
+    </div>
+  </div>
+  <div class="tjh-img-mod-cont">
+    <div class="tjh-img-act tjh-mod-lan">
+      <img src="media/images/temp/currencyformat.png" alt="Currency Format"/>
+      <div class="tjh-mod-cap tjh-mod-lan">The spreadsheet is updated as currency format.</div>
+    </div>
+  </div>
+  <div class="tjh-img-mod-cont">
+    <div class="tjh-img-act tjh-mod-lan">
+      <img src="media/images/temp/samerowcal.png" alt="Same Row Calculation"/>
+      <div class="tjh-mod-cap tjh-mod-lan">Same Row Calculation.</div>
+    </div>
+  </div>
+  <div class="tjh-img-mod-cont">
+    <div class="tjh-img-act tjh-mod-lan">
+      <img src="media/images/temp/diffrowcal.png" alt="Different Row Calculation"/>
+      <div class="tjh-mod-cap tjh-mod-lan">Different row calculation.</div>
+    </div>
+  </div>
+</div>
+	  
+	  <div id="tjh-cookie-message" class="tjh-border-bg tjh-cookie-message">
+	    <div id="tjh-info">
+		</div>
+	  </div>
+	  
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="js/983621.js"></script>
+
+<script>
+  document.getElementById("demo").innerHTML = month[10] + " " + day[12] + " " + year[5];
+  document.getElementById("demo2").innerHTML = articleAuthor.authName(); 
+</script>
+
+</body>
+</html>
