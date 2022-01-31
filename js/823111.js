@@ -1,17 +1,15 @@
 document.getElementById("tjh-logo").innerHTML = "<a href='index.html'><img src='media/images/logo/tjhcomp_logo.png' alt='TJH Logo'></a>";
 
-document.getElementById("tjh-mn-link-1").innerHTML = "<a href='#'>Home</a>";
-document.getElementById("tjh-mn-link-2").innerHTML = "<a href='#'>Computing</a>";
-document.getElementById("tjh-mn-link-3").innerHTML = "<a href='#'>Networking</a>";
-document.getElementById("tjh-mn-link-4").innerHTML = "<a href='#'>Programming</a>";
-//document.getElementById("tjh-mn-link-5").innerHTML = "<a href='#'>Security</a>";
+document.getElementById("tjh-mn-link-1").innerHTML = "<a href='index.html'>Home</a>";
+document.getElementById("tjh-mn-link-2").innerHTML = "<a href='computing.html'>Computing</a>";
+document.getElementById("tjh-mn-link-3").innerHTML = "<a href='networking.html'>Networking</a>";
+document.getElementById("tjh-mn-link-4").innerHTML = "<a href='origramming.html'>Programming</a>";
 document.getElementById("tjh-srch").innerHTML = "<input type='text' placeholder='Search...'/>";
 
 document.getElementById("tjh-ft-col-1").innerHTML = "<h3>Site Links</h3>" +
 "<a href='#'>Computing</a>" + 
 "<a href='#'>Networking</a>" + 
-"<a href='#'>Programming</a>" + 
-"<a href='#'>Secuirty</a>";
+"<a href='#'>Programming</a>";
 
 document.getElementById("tjh-ft-col-2").innerHTML = "<h3>Information</h3>" +
 "<a href='#'>Privacy Policy</a>" + 
