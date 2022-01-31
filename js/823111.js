@@ -1,94 +1,30 @@
-// Programming Page Updates
-// Global Sectors
-var defaultimage = "<img src='media/images/default/tjhcomp_preview.png'>";
+document.getElementById("tjh-logo").innerHTML = "<a href='index.html'><img src='media/images/logo/tjhcomp_logo.png' alt='TJH Logo'></a>";
 
-// Update sector 1
-var title1 = "Create A Bar Navigation With Inline Display";
-var date1 = month[9] + " " + day[14] + " " + year[5];
-var details1 = "Blog/Programming/98232";
-var linktags1 = htmlTag + ", " + cssTag + ", " + navTag;
-var image1 = "<img src='media/images/previews/tjh_inline_display_nav_160x160.png'>";
-var defaultimage = "<img src='media/images/default/tjhcomp_preview.png'>";
+document.getElementById("tjh-mn-link-1").innerHTML = "<a href='#'>Home</a>";
+document.getElementById("tjh-mn-link-2").innerHTML = "<a href='#'>Computing</a>";
+document.getElementById("tjh-mn-link-3").innerHTML = "<a href='#'>Networking</a>";
+document.getElementById("tjh-mn-link-4").innerHTML = "<a href='#'>Programming</a>";
+//document.getElementById("tjh-mn-link-5").innerHTML = "<a href='#'>Security</a>";
+document.getElementById("tjh-srch").innerHTML = "<input type='text' placeholder='Search...'/>";
 
-var link1 = "creating_inline_bar_nav.html";
+document.getElementById("tjh-ft-col-1").innerHTML = "<h3>Site Links</h3>" +
+"<a href='#'>Computing</a>" + 
+"<a href='#'>Networking</a>" + 
+"<a href='#'>Programming</a>" + 
+"<a href='#'>Secuirty</a>";
 
-document.getElementById("update-title-1").innerHTML = "<a href='" + link1 + "'>" + title1 + "</a>";
-document.getElementById("update-date-1").innerHTML = "<a href='" + link1 + "'>" + date1 + "</a>";
-document.getElementById("update-details-1").innerHTML = "<a href='" + link1 + "'>" + details1 + "</a>";
-document.getElementById("update-tags-1").innerHTML = "<a href='" + link1 + "'>" + linktags1 + "</a>";
-document.getElementById("update-image-1").innerHTML = "<a href='" + link1 + "'>" + image1 + "</a>";
+document.getElementById("tjh-ft-col-2").innerHTML = "<h3>Information</h3>" +
+"<a href='#'>Privacy Policy</a>" + 
+"<a href='#'>Community Guidelines</a>" + 
+"<a href='#'>Contact</a>";
 
-// Update sector 2
-var title2 = "Understanding Frontend Development";
-var date2 = month[9] + " " + day[14] + " " + year[5];
-var details2 = "Guide/Programming/91123";
-var linktags2 = htmlTag + ", " + cssTag + ", " + navTag;
-var image2 = "<img src='media/images/previews/tjh_front_end_dev_160x160.png'>";
+document.getElementById("tjh-ft-col-3").innerHTML = "<h3>Social</h3>" +
+"<a href='#' class='fa fa-facebook-square'></a>" + 
+"<a href='#' class='fa fa-instagram'></a>" + 
+"<a href='#' class='fa fa-twitter-square'></a>" + 
+"<a href='#' class='fa fa-linkedin-square linkedin'></a>";
 
-var link2 = "creating_inline_bar_nav.html";
+document.getElementById("tjh-ft-info").innerHTML = "<p></p>";
+document.getElementById("tjh-ft-cprt").innerHTML = "<h4>&copy; 2022 TJHCOMP</h4>";
+document.getElementById("tjh-ft-logo").innerHTML = "<a href='index.html'><img src='media/images/logo/tjhcomp_logo.png' alt='TJH Logo'></a>";
 
-document.getElementById("update-title-2").innerHTML = "<a href='" + link2 + "'>" + title2 + "</a>";
-document.getElementById("update-date-2").innerHTML = "<a href='" + link2 + "'>" + date2 + "</a>";
-document.getElementById("update-details-2").innerHTML = "<a href='" + link2 + "'>" + details2 + "</a>";
-document.getElementById("update-tags-2").innerHTML = "<a href='" + link2 + "'>" + linktags2 + "</a>";
-document.getElementById("update-image-2").innerHTML = "<a href='" + link2 + "'>" + image2 + "</a>";
-
-// Update sector 3
-var title3 = "Differences Between JavaScript and jQuery";
-var date3 = "";
-var details3 = "Blog/Programming/84211";
-var linktags3 = "";
-//var image3 = "";
-
-var link3 = "";
-
-document.getElementById("update-title-3").innerHTML = "<a href='" + link3 + "'>" + title3 + "</a>";
-document.getElementById("update-date-3").innerHTML = "<a href='" + link3 + "'>" + date3 + "</a>";
-document.getElementById("update-details-3").innerHTML = "<a href='" + link3 + "'>" + details3 + "</a>";
-document.getElementById("update-tags-3").innerHTML = "<a href='" + link3 + "'>" + linktags3 + "</a>";
-document.getElementById("update-image-3").innerHTML = "<a href='" + link3 + "'>" + defaultimage + "</a>";
-
-// Update sector 4
-var title4 = "Configuring Front-End and Back-End Services Using LAMP";
-var date4 = "";
-var details4 = "Blog/Programming/88302";
-var linktags4 = "";
-//var image4 = "";
-
-var link4 = "";
-
-document.getElementById("update-title-4").innerHTML = "<a href='" + link4 + "'>" + title4 + "</a>";
-document.getElementById("update-date-4").innerHTML = "<a href='" + link4 + "'>" + date4 + "</a>";
-document.getElementById("update-details-4").innerHTML = "<a href='" + link4 + "'>" + details4 + "</a>";
-document.getElementById("update-tags-4").innerHTML = "<a href='" + link4 + "'>" + linktags4 + "</a>";
-document.getElementById("update-image-4").innerHTML = "<a href='" + link4 + "'>" + defaultimage + "</a>";
-
-// Update sector 5
-var title5 = "Testing and Validating Web Content";
-var date5 = "";
-var details5 = "Blog/Programming/72031";
-var linktags5 = "";
-//var image5 = "";
-
-var link5 = "";
-
-document.getElementById("update-title-5").innerHTML = "<a href='" + link5 + "'>" + title5 + "</a>";
-document.getElementById("update-date-5").innerHTML = "<a href='" + link5 + "'>" + date5 + "</a>";
-document.getElementById("update-details-5").innerHTML = "<a href='" + link5 + "'>" + details5 + "</a>";
-document.getElementById("update-tags-5").innerHTML = "<a href='" + link5 + "'>" + linktags5 + "</a>";
-document.getElementById("update-image-5").innerHTML = "<a href='" + link5 + "'>" + defaultimage + "</a>";
-
-// Update sector 6
-var title6 = "Coming Soon";
-var date6 = "";
-var details6 = "Coming Soon";
-var linktags6 = "";
-//var image6 = "";
-
-var link6 = "";
-
-document.getElementById("update-title-6").innerHTML = "<a href='" + link6 + "'>" + title6 + "</a>";
-document.getElementById("update-date-6").innerHTML = "<a href='" + link6 + "'>" + date6 + "</a>";
-document.getElementById("update-details-6").innerHTML = "<a href='" + link6 + "'>" + details6 + "</a>";
-document.getElementById("update-tags-6").innerHTML = "<a href='" + link6 + "'>" + linktags6 + "</a>";
-document.getElementById("update-image-6").innerHTML = "<a href='" + link6 + "'>" + defaultimage + "</a>";
