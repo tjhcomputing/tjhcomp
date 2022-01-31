@@ -883,3 +883,69 @@ section footer {
 
 
 
+
+
+
+.tjh-col-content {
+  background-color: #001726;
+  cursor: pointer;
+  padding: 10px 12px;
+  width: 182px;
+  text-align: left;
+  font-size: 15px;
+  position: relative;
+}
+
+.tjh-cont-open, .tjh-col-content:hover {
+  color: #00ffcc;
+}
+
+.tjh-col-content:after {
+  content: '\002B';
+  font-weight: bold;
+  float: left;
+  margin: 0 5px;
+  color: #00ffcc;
+}
+
+.tjh-cont-open:after {
+  content: "\2212";
+}
+
+.tjh-cont-link {
+  display: none;
+  overflow: hidden;
+  background-color: #0d2331;
+  padding: 0 12px;
+  width: 182px;
+}
+
+.tjh-cont-link a {
+  text-decoration: none;
+  padding: 10px 0;
+  display: block;
+  width: 175px;
+  position: relative;
+  margin-right: 10px;
+}
+
+.tjh-col-content a span {
+  color: #001726;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.tjh-cont-link a span {
+  color: #0d2331;
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+.tjh-col-content a:hover span, 
+.tjh-cont-link a:hover span {
+  color: #00ffcc;
+  transition: 1s;
+}
+
