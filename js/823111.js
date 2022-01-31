@@ -3,7 +3,7 @@ document.getElementById("tjh-logo").innerHTML = "<a href='index.html'><img src='
 document.getElementById("tjh-mn-link-1").innerHTML = "<a href='index.html'>Home</a>";
 document.getElementById("tjh-mn-link-2").innerHTML = "<a href='computing.html'>Computing</a>";
 document.getElementById("tjh-mn-link-3").innerHTML = "<a href='networking.html'>Networking</a>";
-document.getElementById("tjh-mn-link-4").innerHTML = "<a href='origramming.html'>Programming</a>";
+document.getElementById("tjh-mn-link-4").innerHTML = "<a href='programming.html'>Programming</a>";
 document.getElementById("tjh-srch").innerHTML = "<input type='text' placeholder='Search...'/>";
 
 document.getElementById("tjh-ft-col-1").innerHTML = "<h3>Site Links</h3>" +
