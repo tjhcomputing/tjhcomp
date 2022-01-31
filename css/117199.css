@@ -162,7 +162,7 @@ section header {
   font-size: 14px;
   background-color: #001726;
   color: #ccebff;
-  border-right: 1px solid #1a2e3c;
+  border-right: 1px solid #7a8f9e;
   border-left: 1px solid #1a2e3c;
 }
 
@@ -691,6 +691,9 @@ section footer {
   background-color: #00e673;
   color: #006633;
 }
+
+
+
 
 
 .tjh-slide-container {
