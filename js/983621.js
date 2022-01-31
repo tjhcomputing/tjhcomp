@@ -3,16 +3,16 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
     document.getElementById("tjh-s-nav").style.height = "70px";
-	document.getElementById("tjh-s-nav").style.position = "fixed";
-	document.getElementById("tjh-s-nav").style.top = 0;
+    document.getElementById("tjh-s-nav").style.position = "fixed";
+    document.getElementById("tjh-s-nav").style.top = 0;
     document.getElementById("tjh-warning-msg").style.top = "70px";
-	document.getElementById("tjh-warning-msg").style.position = "fixed";
+    document.getElementById("tjh-warning-msg").style.position = "fixed";
   } else {
     document.getElementById("tjh-s-nav").style.height = "35px";
-	document.getElementById("tjh-s-nav").style.position = "absolute";
-	document.getElementById("tjh-s-nav").style.top = "65px";
+    document.getElementById("tjh-s-nav").style.position = "absolute";
+    document.getElementById("tjh-s-nav").style.top = "65px";
     document.getElementById("tjh-warning-msg").style.top = "100px";
-	document.getElementById("tjh-warning-msg").style.position = "absolute";
+    document.getElementById("tjh-warning-msg").style.position = "absolute";
   }
 }
 
