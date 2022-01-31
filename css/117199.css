@@ -800,3 +800,86 @@ section footer {
 }
 
 
+
+.tjh-nv-ext-btn, .tjh-s-nav a {
+  color: #001726;
+  font-size: 15px;
+  width: 140px;
+  text-align: center;
+  padding: 9px 10px;
+  letter-spacing: 0.8px;
+  cursor: none;
+  text-shadow: 0px 3px 10px rgba(0,23,38,0.3);
+}
+
+.tjh-s-nv-extend .tjh-s-nav a {
+  position: relative;
+  display: inline-block;
+  margin: 0 -2px 0 -2.5px;
+}
+
+.tjh-ext-content {
+  display: none;
+  position: absolute;
+  background-color: #001726;
+  width: 158px;
+  box-shadow: 0px 8px 16px 0px rgba(0,23,38,0.4);
+  z-index: 1;
+  text-align: left;
+  border-left: 1px solid #0d2331;
+  border-right: 1px solid #0d2331;
+  border-bottom: 1px solid #0d2331;
+  max-height: 200px;
+  overflow: overlay;
+  overflow-x: hidden;
+}
+
+.tjh-ext-content a {
+  color: #ccebff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+}
+
+.tjh-ext-content a:hover {
+  background-color: #0d2331;
+  color: #00ffcc;
+  transition: 0.7s;
+}
+
+.tjh-s-nv-extend:hover .tjh-ext-content {
+  display: block;
+  animation-name: example;
+  animation-duration: 1s;
+}
+
+.tjh-s-nv-extend:hover .tjh-nv-ext-btn, 
+.tjh-s-nav a:hover {
+  background: rgba(0,23,38,0.2);
+  padding: 9px 10px 6px;
+  border-bottom: 3px solid #001726;
+}
+
+.tjh-s-nav a:hover {
+  cursor: pointer;
+}
+
+.tjh-ext-content::-webkit-scrollbar {
+  width: 5px;
+}
+
+.tjh-ext-content::-webkit-scrollbar-track {
+  background-color: #001726;
+}
+
+.tjh-ext-content::-webkit-scrollbar-thumb {
+  background-color: #0099ff;
+}
+
+.tjh-ext-content::-webkit-scrollbar-thumb:hover {
+  background-color: #00ffcc;
+}
+
+
+
