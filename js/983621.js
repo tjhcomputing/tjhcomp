@@ -36,7 +36,7 @@ function commentSelect(com, comsys) {
 document.getElementById("tjh-warning-msg").innerHTML = "<div class='tjh-warn tjh-w-m'>" +
 //"<span class='fa fa-warning'></span> " + 
 "<span class='fa fa-wrench'></span> " + 
-"Currently site testing. Content coming soon..." + 
+"Pracitcal Site Version. Currently site testing..." + 
 " <span class='fa fa-wrench'></span>" + 
 //"<span class='fa fa-warning'></span> " + 
 "</div>";
